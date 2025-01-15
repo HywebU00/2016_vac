@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+.friendly {
+	margin: 55px 10px 0px 0px;
+	padding: 0px;
+	clear:both;
+}
+
+/*--------------------------------------------------------------------------------[ path ]-----*/
+.friendly .path {
+	margin-left:15px;
+	border: 0px dotted #CCC;
+	font-weight: normal;
+	float:left;
+}
+
+.friendly .path .before {
+	font-size: 100%;
+	color: #333;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+	margin-left: 5px;
+}
+.friendly .path a {
+	color:#888;
+	font-weight: normal;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	padding-left: 3px;
+}
+
+/*--------------------------------------------------------------------------------[ function ]-----*/
+.friendly .function {
+	float: right;
+	padding: 0px;
+	margin-top:10px;
+	margin-right:2%;
+	margin-bottom:10px;
+	margin-left: 0px;
+}
+.friendly .function ul {
+	padding: 0px;
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.friendly .function ul li {
+	display: inline;
+}
+.friendly .function ul li a {
+	
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0px;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 25px;
+	color:#888;/*veela0819*/
+}
+.friendly .function li a:hover{
+	color: #000;
+}
+.friendly .function ul li .print {
+	background-image: url(../images/icon_01.gif);
+	background-repeat: no-repeat;
+	background-position: 2px center;
+	
+}
+.friendly .function ul li .forward {
+	background-image: url(../images/icon_02.gif);
+	background-repeat: no-repeat;
+	background-position: 2px center;
+	
+}
+.friendly .function ul li .back {
+	background-image: url(../images/icon_03.gif);
+	background-repeat: no-repeat;
+	background-position: 2px center;
+	
+}
+
+.friendly .function ul li .search02 {
+	
+	background-image: url(../images/search02.gif);
+	background-repeat: no-repeat;
+	background-position: 2px 3px;
+	
+}
+.friendly .function ul li .rss {
+	background-image: url(../images/rss.gif);
+	background-repeat: no-repeat;
+	background-position: 2px 3px;
+	
+	}
+
+.friendly .function .BM {
+}
+
+/*--------------------------------------------------------------------------------[ quickLink ]-----*/
+.quickLink {
+	margin-top: 10px;
+	margin-right:0px;	
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-top: 1px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+}
+.lp .quickLink {
+	margin-top: 18px;
+}
+.quickLink ul {
+	width: 100%;
+	margin:1em 0 !important;
+	text-align: right;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-top: 0px;
+	padding-right: 1px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.quickLink ul li {
+	display: inline;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.quickLink ul li a {
+	
+	font-weight: normal;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 25px;
+	display: inline;
+	text-align: right;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	color:#3376cc;/*veela0819*/
+}
+.quickLink ul li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.quickLink ul li .gotop {
+	background-image: url(../images/icon_03.gif);
+	background-repeat: no-repeat;
+	background-position: 5px center;/*veela0819*/
+	*background-position: 5px center;/*veela0819*/
+}
+.quickLink ul li a.back {
+	background-image: url(../../images/icon_03.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 4px;
+	*background-position: 5px 1px;
+}
+/*--------------------------------------------------------------------------------[ np_quickLink_補修正公用資料跑位 ]-----*/
+.np .quickLink { padding-top: 1px;	padding-bottom: 5px; clear:both; }
+.np .quickLink li { background-image: none; }
+.np .quickLink li a { margin-right: 2px; }
+/*--------------------------------------------------------------------------------[ qp_quickLink_補修正公用資料跑位 ]-----*/
+.form .quickLink { padding-top: 1px;	padding-bottom: 5px; }
+.form .quickLink li { background-image: none; }
+.form .quickLink li a { margin-right: 2px; }
+
+/*
+.text_red {	
+	color: #CC0000;
+}
+.text_green { 
+	color: #009933;
+}
+.text_blue {
+	color: #0066CC;
+}
+*/
+@media screen and (max-width:767px) {
+	.friendly{ display:none;}
+	}

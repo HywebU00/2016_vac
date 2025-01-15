@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------------------------[  form  ]----------*/
+
+
+.form p {
+	color: #666;
+}
+
+.form p a{ color:#F90!important; text-decoration:underline;}
+
+
+.form .pic {
+	margin: 2px;
+	padding: 1px;
+	height: 100px;
+	width: 120px;
+	border: 1px solid #CCCCCC;
+}
+.form .note {
+	font-size: 80%;
+	width: 95%;
+	margin-top: 5px;
+	margin-right: 0;
+	margin-bottom: 5px;
+	margin-left: 20;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	float: left;
+}
+.form .note em{color:#CC0000; }
+.form .note span{ color:#0066CC;}
+.form .note span.text_red{
+	color:#CC0000;
+}
+.form table {
+	width:100%;
+	clear:both;
+	border-collapse:collapse;
+	margin: 0px;
+	padding: 0px;
+}
+
+.form .center table {
+	width:98%;
+	clear:both;
+	border-collapse:collapse;
+	/*margin-top:10px;
+	margin-bottom:10px; modify for search bug*/
+	padding:5px;
+}
+.form .center table tr{
+	border: 1px dotted #CCC;
+}
+.form .center table tr th {
+	color: #333333;
+	padding:8px;
+	text-align:right;
+	margin:0px;
+	vertical-align:middle;
+	white-space: nowrap;
+	font-weight: normal;
+	background-color:#ebeced;/*veela0819*/
+}
+
+
+.form .center table caption { 
+	color:#666; 
+	padding:2px 0;
+	text-align:left; 
+}
+.form .center table th label{
+	color: #333333;padding:0px;margin:0px;
+}
+.form .center table th.throw{
+	color: #009999;
+	padding:8px 3px 0px 3px;
+	text-align: right;
+	background-color: Transparent;
+	border-right: Transparent;
+	font-weight: normal;
+	vertical-align:top;
+	white-space: nowrap;
+}
+.form .center table th.thCol{
+	color: #333333;
+	text-align:center;
+	vertical-align:middle;
+	border: 1px dotted #CCC;
+	font-weight: normal;
+	background-color: #EFEFEF;
+}
+.form .center table td{
+	vertical-align:top;
+	margin: 0px;
+	padding:8px;
+	font-size: 1em;
+}
+.form .center table td .formList{
+	margin:5px 0 0 5px;
+}
+.form .center table td .formList li{
+	line-height: 25px;
+	padding:0 0 0 15px;
+	background-image: url(../images/icon_arrow3.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 6px;
+}
+.form .center table td img {
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.form .center table td label textarea {
+	font-size: 1em;
+}
+.form .btn_center {
+	text-align: center;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 100%;
+	white-space: nowrap;
+}
+.form .center table a{
+	color: #000033;
+}
+
+.form .center table a:hover{
+	text-decoration:underline;
+}
+
+.form .text{ 
+	color: #333333;
+	background-color: #FFFFFF;
+	vertical-align:middle;
+	padding:3px;
+	width:80%;
+	border: 1px solid #CCC;
+	margin:5px 0px;
+}
+.form .textarea{ width:80%; height:150px; font-size:105%;}
+.form .formBtn{ text-align:center;}
+.form .notes table{
+	border:0px;
+}
+
+
+@media screen and (max-width:767px){
+	.form .center .formBox{ 
+		width:95%;
+		overflow-x: auto;
+	}
+}

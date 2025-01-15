@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+.dataTb {
+	clear:both;
+	width: 100%;
+	text-align:center;	
+}
+.dataTb table {
+	width: 98%;	
+	margin: 5px 0px 10px 0px;
+	border-collapse: collapse;	
+	border-bottom:1px solid #e7e7e7;
+	border-left:1px solid #e7e7e7;
+	border-right:1px solid #e7e7e7;
+	background:#ffffff;
+	
+	
+}
+.dataTb table caption {
+	line-height: 120%;
+	text-align:left;
+	color:#999;
+}
+.dataTb table tr.altrow{
+	background: #FDFEF5;
+}
+.dataTb table th {
+	line-height: 165%;
+	white-space: nowrap;
+	vertical-align: top;
+	padding: 4px 4px 1px 4px;
+	white-space: nowrap;
+	color: #fff;	
+	font-weight: bold;
+	border-right:1px solid #4595b7;
+	border-bottom:2px solid #DDD;
+	background: #59a3c2 url(none);
+	font-size:13px;
+}
+
+.dataTb table th img {
+	margin: 0 3px;
+	cursor: pointer;
+}
+.dataTb tr td {
+	clear:both;
+	line-height: 165%;
+	vertical-align: top;
+	padding: 4px 4px 2px 4px !important;
+	border: 1px solid #ccc!important;
+	text-align:left;
+	
+}
+
+.dataTb table tr{ border-bottom:#cccccc solid 1px;}
+
+.dataTb table th.date{ text-align:center}
+.dataTb table td.dept{ border:0px;border-top: 1px dotted #BBBBBB;	}
+.dataTb table td.date{ width:65px; word-break:break-all; text-align:center; }
+.dataTb table td.number{ text-align:center; font-size:12px; color:#5f5c80;}
+.dataTb table td a {
+	margin-right: 4px;
+}
+
+.dataTb td ol {
+	margin: 5px 0 0 -8px;	
+	display: inline-block;	
+}
+
+
+

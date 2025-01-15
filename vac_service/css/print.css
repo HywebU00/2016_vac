@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body div {
+	color: #000000;
+	font-size:12px;
+	
+}
+.search , .friendly , .leftbg , .rightbg, .footer , .menu, .top,.header,.webFun{
+	visibility: hidden;
+	display: none;
+}
+.cp table p {
+	font-size:13px;
+	}
+.cp ul li,.cp ol li{ font-size:14px}
+
+
+.cp h3{ font-size:15px;}
+
+.cp h4{ font-size:14px;} 
+
+.cp .table tr td { font-size:13px;}
+.cp table td table td{ font-size:13px;}
+
+
+
+
+
+

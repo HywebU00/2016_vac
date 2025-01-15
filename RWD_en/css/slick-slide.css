@@ -1,0 +1,74 @@
+@font-face { font-family: 'Pacifico'; src: url('pacifico.eot'); src: url('pacifico.eot?#iefix') format('embedded-opentype'), url('pacifico.woff') format('woff'), url('pacifico.ttf') format('truetype'), url('pacifico.svg#Pacifico') format('svg'); }
+/*slick-slide*/
+/*-*/
+.bigbanner .slick-slide a{ position: relative;display: block; z-index: 9; overflow: hidden; }
+.bigbanner .slick-slide a:focus:before{ content:"";position: absolute;width: 100%;height: 100%;display: block;box-shadow: 0 0 0 5px #21baff inset;z-index: 9; }
+.bigbanner .slick-slide a:after { padding-top: 35%; content: ""; display: block; }
+.bigbanner .slick-slide a img { 
+	position: absolute; top: 0; bottom: 0; right: 0; left: 0;
+	max-width: 100%; max-height: 100%; margin: auto; width: 100%; 
+	object-fit: cover; padding-bottom: 45px; }
+	.bigbanner div span { 
+		position: absolute; bottom: 0; right: 0;left: 0;
+		display: block;padding:5px 16% 5px 5px; 
+		background-image: url(../images/sketch_bg.png); 
+		background-repeat: repeat; min-height:45px;
+		background-position: 0 0; color: #fff; 
+	}
+	@media (max-width: 1200px)and (min-width: 992px) {
+		.bigbanner .slick-slide a:after { padding-top: 35%; }
+		.bigbanner .slick-slide a img { width: 100%;height: auto; object-fit: cover; }
+	}
+	.bigbanner .slick-prev:before, .bigbanner .slick-next:before { font-size: 40px }
+	.bigbanner .slick-number { position: absolute; bottom: -3px; right: 0px }
+	.bigbanner .slick-number li { float: left; list-style-type: none; text-align: center; 
+		margin: 0 5px 0 0; border: none;}
+
+		.bigbanner .slick-number li button{border:none;border-radius: 50%; background-color: #fff; width: 30px; height: 30px; line-height: 23px;}
+		.bigbanner .slick-number li.slick-active button{ background-color: #5bc0de; }	
+		/*-輪播箭頭*/
+		/* .bigbanner .slick-next ,.bigbanner .slick-prev{font-size: 3em;} */
+		.bigbanner .slick-next { right: 30px;z-index: 9; }
+		.bigbanner .slick-prev { left: 15px }
+		/*-輪播點點*/
+		.bigbanner .slick-dots li button:before { opacity: 1; color: #fff }
+		.bigbanner .slick-dots li button:hover:before, .bigbanner .slick-dots li button:focus:before { color: #fff }
+		.bigbanner .slick-dots li.slick-active button:before { color: #17b3e6 }
+		.bigbanner .slick-dots { top: 10px; text-align: right }
+		.bigbanner .slick-prev:before, .bigbanner .slick-next:before {  color: #fff }
+
+
+		/*-輪播2*/
+		.cp_photo { width: 100%; margin: 0px; padding: 0; clear: both; position: relative; }
+		.cp_photo div a { position: relative; display: block; overflow: hidden; }
+		.cp_photo div a:after { padding-top: 67%; content: ""; display: block; }
+		.cp_photo div a img { position: absolute; top: 0; bottom: 0; right: 0; left: 0; max-width: 100%; max-height: 100%; margin: auto; }
+		.cp_photo div span { position: absolute; bottom: 0px; color: #fff; width: 100%; padding: 10px; background-image: url(../images/sketch_bg.png); background-repeat: repeat; background-position: 0 0; text-align: center }
+		.cp_photo .slick-prev:before, .cp_photo .slick-next:before { font-size: 40px }
+		/*-輪播箭頭*/
+		.cp_photo .slick-next { right: 40px; }
+		.cp_photo .slick-prev { left: 20px }
+		.cp_photo .slick-prev:before, .cp_photo .slick-next:before { color: #ccc }
+		/*-輪播點點*/
+		.cp_photo .slick-dots li button:hover:before, .cp_photo .slick-dots li button:focus:before { color: #1a8dce }
+		.cp_photo .slick-dots li.slick-active button:before { color: #34495e }
+		.cp_photo .slick-dots { bottom: -30px; margin: 0 }
+		.cp_photo .slick-dots li button::before { font-size: 20px }/*-點點大小*/
+		.cp .slick-dots li { margin: 0 5px }
+
+
+		@media (max-width: 767px){
+			.bigbanner{margin:0 auto; }
+			.bigbanner .slick-slide a{position: inherit; overflow: inherit;}
+			.bigbanner div span{padding:5px; min-height: inherit; background:none; position: inherit; right: inherit;left: inherit; bottom: inherit;}
+			.bigbanner .slick-number{ text-align: center; }
+			.bigbanner .slick-number { position: absolute;display: block;width: 100%; bottom: 0px;left:0; right: 0px ; }
+			.bigbanner .slick-number li{  display: inline-block; float: none; text-align: center;}
+			.bigbanner .slick-slide a:after { padding-top: inherit; }
+			.bigbanner .slick-slide a img{height: inherit;width: inherit; position: inherit; object-fit: inherit;}
+		}
+		@media (max-width: 480px){
+			.bigbanner .slick-prev, .bigbanner .slick-next{top:35%;} 
+			.bigbanner .slick-number{position: inherit; padding: 0; margin: 6px auto; bottom:0;display: inline-block !important;text-align: center;width: 100%;}
+			.bigbanner .slick-number li{float: none; display: inline; }
+		}

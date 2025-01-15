@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.layout{ width:100%; margin:0px 0 0 0; padding:0; border-collapse:collapse;}
+
+.layout tr td{ /*width:auto; modify for search page bug*/ vertical-align:top;}
+
+.mp .layout .center{ width:100%;padding:0 2%;}
+.layout .leftbg{ width:25%; padding:0 2% 0 0; margin:0;}
+.layout .center{ padding:0 2% 0 2%;padding: 0 5px 0 5px\9;/*han1004*/}
+
+@media screen and (max-width:767px){
+
+.mp .layout .center{ width:80%;padding:0 1% 10px 2%;background: none;}
+.layout tr td { display:inline;}
+
+.layout tr td tr td{ display:table-cell; }
+.layout tr td tr{ display:compact;}
+	 
+	 
+ }

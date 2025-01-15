@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------[ mlmenu_左欄設定]--------------------*/	
+
+.leftbg .mlmenu {
+	background: none;
+	position: static;
+}
+.leftbg .mlmenu ul  {
+	width: 95%;
+	display: block;
+	margin: 0 0 5px 10px;
+	text-align: left;
+	
+}
+.leftbg .mlmenu ul li {
+	width: 95%;
+	border-bottom: #CCC dashed 1px;
+	clear: both;
+	background: url(../images/menuIcon01.png) no-repeat left 13px;
+	padding-left: 10px;
+}
+.leftbg .mlmenu ul li a {
+	color: #333;
+	padding-top:15px;
+}
+
+.leftbg .mlmenu ul li a:hover {
+	color: #093e60;/*veela0819*/
+}
+.leftbg .mlmenu ul li a:before {
+	content: "";
+	display: none;
+}
+.leftbg .mlmenu ul li ul {
+	position: static;
+}
+.leftbg .mlmenu ul li ul li {
+	display: block;
+	border: none;
+	background: #FFF url(../images/menuIcon02.png) no-repeat 10px 10px;
+	padding: 2px 0px 2px 5px;
+}
+.leftbg .mlmenu ul li ul li a {
+	font-size: 1.3rem;
+	padding-top:2px;
+}
+/*--------------------[ mlmenu_左欄設定END]--------------------*/	
+
+
+/*--------------------[ mlmenu_第一階控制 ]--------------------*/	
+.mlmenu {
+	margin: 0px 0;
+	text-align: left;
+	clear: both;
+	width: 100%;
+	position: absolute;
+	top: 120px;
+	z-index: 999999;
+	background: url(../images/topmenubg01.png) repeat-x;
+	height: 65px;
+	right: 0px;
+}
+.mlmenu ul {
+	text-align: center;
+	float: left;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	margin: 0 0 0 15px;
+	/*background-image: url(../images/topSub_line01.gif);*/
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.mlmenu ul li {
+	display: inline;
+	float: left;
+	margin: 0 0 0 6px!important;
+	padding: 0px 0px 0px 10px;
+	position: relative;
+	background: url(../images/menuIcon01.png) no-repeat left 18px;
+}
+
+.mlmenu ul li a {
+	font-size: 1.5rem;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	color: #132945;
+	text-decoration: none;
+	text-transform: capitalize;
+	vertical-align: text-top;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	margin: 0px;
+	display: block;
+}
+.mlmenu ul li a:hover {
+	color: #093e60;/*veela0819*/
+}
+/*--------------------[ mlmenu_第二階控制 ]--------------------*/
+.mlmenu ul li ul {
+	left: 0;
+	display: block;
+	/*------預設選單先關掉,再由js控制load完所有資料再送出----------*/
+	display: none;
+	padding: 0px;
+	width: 140px;
+	float: left;
+	z-index: 99;
+	margin: 0px 0px 0px -2px;
+	border: 0px solid #000000;
+}
+.mlmenu ul li ul li {
+	clear: left;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	
+}
+.mlmenu ul li ul li a {
+	color: #ffffff;
+	width: 140px;
+	margin: 0px;
+	float: left;
+	text-decoration: none;
+	font-size: 80%;
+	text-align: left;
+	/*-----第二階背景-----*/
+	background-image: url(../images/menu_bg02.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 3px 2px 2px 18px;
+	line-height: 150%;
+}
+.mlmenu ul li ul li a:hover {
+	color: #333;
+	/*-----第二階背景置換-----*/
+	background-image: url(../images/menu_bg01.jpg);
+}
+/*end of -----------------------menu*/
+/*第二層選單定位*/
+.mlmenu li {
+	position: relative;
+	z-index: 999;
+}
+.mlmenu li ul {
+	
+	left: -10px;
+	top: 33px;
+	height: auto;
+	z-index: 999;
+	display: none;
+}
+/*第三層選單定位*/
+.mlmenu li li ul {
+	position: absolute;
+	z-index: 1000;
+	left: 162px;
+	top: 2px;
+	display: none;
+}
+.mlmenu li ul li a {
+}
+/*end of -----------------------menu*/
+
+/*手機滑動選單相關*/
+
+
+.openMenu, .closeMenu {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: -100%;
+}
+.openMenu.show, .closeMenu.show {
+	left: 0;
+}
+.openMenu {
+	background: #43b8ca url(../images/mobileMenuIcon.png) center;
+}
+.closeMenu {
+	background: #43b8ca url(../images/mobileMenuIcon.png) center;
+}
+.mobileMenu {
+	display: none;    /*一般非手機情況消失*/
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	left: 20px;
+	z-index: 9999999;
+	border-radius: 5px;
+	-webkit-transition: left 0.5s;
+	-moz-transition: left 0.5s;
+}
+ @media screen and (max-width:800px){
+
+.leftbg .mlmenu ul li ul, .mlmenu ul li ul{
+	display:block;	
+	}
+
+
+.leftbg .mlmenu ul li a:before,.mlmenu ul li a:before {
+display:none;
+}
+ .mpwrap {
+ 
+ height:100%;
+ -webkit-transition:margin 0.5s;
+ -moz-transition:margin 0.5s;
+}
+ 
+
+.leftbg .mlmenu,.mlmenu {
+ position:fixed;
+ top:0;
+ left:-150px;
+ width:150px;
+ height:100%;
+ background:#E8E8E8;
+ -webkit-transition:left 0.5s; /*for手機要加前綴字*/
+ -moz-transition:left 0.5s;
+}
+.leftbg .mlmenu ul ,.mlmenu ul{
+margin: 0 0 0 0px;
+}
+.leftbg .mlmenu ul li ,.mlmenu ul li {
+ display:inline;
+ padding:0 0 0 0px;
+ border-bottom:1px dashed #FFF;
+ background-position:2px 8px;
+ width:120px;
+ color:#FFF;
+}
+.leftbg .mlmenu ul li a ,.mlmenu ul li a {
+ display:block;
+ padding:8px 5px 8px 25px;
+ color:#333;
+ text-decoration:none;
+}
+.leftbg .mlmenu ul li a:hover ,.mlmenu ul li a:hover{
+ color:#36C;
+}
+ .mobileMenu {
+ display:block;
+ position:fixed;
+ left:10px;
+ top:7px;
+}
+
+.mpwrap {
+ margin-left:0;
+}
+.mobileMenu.show {
+ left:160px;
+}
+.mlmenu.show {/*.nav.show不要有空格才會同時套用兩個*/
+ left:0;
+}
+.mpwrap.show {
+ margin-left:150px;
+}
+.leftbg .mlmenu ul li ul li ,.mlmenu ul li ul li{ padding-left:20px; background:url(../images/menuIcon02.png) no-repeat left 8px; border-bottom:opx;}
+.leftbg .mlmenu ul li ul li a ,.mlmenu ul li ul li a{ padding:0px; width:120px; color:#FFF;font-size:1.2rem!important; color:#333;}
+.leftbg .mlmenu ul li ul li a:hover ,.mlmenu ul li ul li a:hover{ background:none;}
+.leftbg .mlmenu ul li ul ,.mlmenu ul li ul { background:none;}
+
+
+.nav{ left:0px;
+-webkit-transition:left 0.5s; /*for手機要加前綴字*/
+ -moz-transition:left 0.5s;}
+
+.nav.show{
+	left:150px;
+	}
+
+}

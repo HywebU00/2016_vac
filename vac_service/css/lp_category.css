@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ----------------------------------------------------------------------[ category ]---------- */
+.lp .category {
+	width: 97%;
+	margin:10px 0;
+	clear: both;
+}
+.lp .category ul {
+	margin: 0px;
+	padding: 0px;
+}
+.lp .category ul li {
+	display:inline;
+	margin:2px 10px 0px -2px;
+	padding: 2px 0px 0px 0px;
+	
+	
+}
+.lp .category ul li span {
+}
+.lp .category ul li span a {
+	padding:5px 8px 5px 8px;
+	margin-top: 2px;
+	margin-right: -3px;
+	margin-bottom: 2px;
+	margin-left: -2px;
+	line-height: 170%;
+	color: #000;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	display: inline-block;
+	text-decoration: none;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-color:#C7CCD0;
+	border-radius:5px;
+}
+
+.lp .category ul li span a:hover {
+	color: #fff;
+	background:#ff7200;
+}
+
+.lp .category ul .here span a {
+	background-color: #ff7200;
+	color: #FFF;
+	cursor:pointer;
+}
+ .lp .category ul .here span a:hover {
+	 
+	 background-color: #ff7200;
+	color:#FFF;
+}
+

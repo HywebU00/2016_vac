@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.lpTb {
+	clear: both;	
+	width: 100%;
+	text-align:left;
+}
+.lpTb table {
+	width: 99%;
+	margin: 5px 0px 10px 0px;
+	*margin: 5px 0px 10px -6px;
+	border-bottom: 2px solid #D6E7EF;
+	border:1px #CCCCCC solid;
+	border-radius:5px;
+	/* [disabled]text-align:left; */
+}
+.lpTb table caption {
+	line-height: 120%;
+	text-align:left;
+	color:#999;
+}
+.lpTb table tr.altrow{
+	background: #FDFEF5;
+}
+.lpTb table th {
+	line-height: 165%;
+	vertical-align: top;
+	padding: 5px;/*veela0819*/
+	color: #000;
+	font-weight: bold;
+	border:1px solid #ccc;/*veela0819*/
+	border-bottom:2px solid #999;/*veela0819*/
+	background: #ddd;/*veela0819*/
+	text-align:left;
+	width:8%;
+}
+.lpTb table th img {
+	margin: 0 3px;
+	cursor: pointer;
+}
+.lpTb table td {
+	vertical-align:middle;
+	padding: 5px 2px 5px 4px;
+	border-top: 1px dotted #DDD;
+	border-right: 1px dotted #DDD !important;
+}
+.lpTb table tr:hover{
+	background-color: #efefef;
+}
+
+.lpTb table td.dept{ border:0px;border-top: 1px dotted #BBBBBB; }
+.lpTb table td.date{
+	width:130px;
+	word-break:break-all;
+	text-align:left;
+	color:#666;
+}
+.lpTb table td.number{
+	text-align: left;
+}
+.lpTb table td a {
+	margin-right: 4px;
+	color:#003;
+}
+.lpTb table td a:hover{ color:#6558b4}
+
+@media screen and (max-width:767px){
+	.lpTb {
+		width:95%;
+		margin:0 auto;
+		overflow-y:hidden;
+	    overflow-x:auto;
+	}
+}
+
+

@@ -1,0 +1,57 @@
+.lp .photo_cp {
+	margin-bottom: 5px;
+	width:auto;
+	display: inline-block;
+}
+.cp h3, .lp h3, .mainContent h3, .np h3 {
+    background: transparent none repeat scroll 0% 0%;
+    padding-left: 0px;
+    display:block;
+    width: 98%;
+    margin-bottom: 5px;
+}
+
+.gcp_slider{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.gcp_slider .bx-wrapper{
+	border-left:20px solid rgb(255, 255, 255);
+	border-right: 10px solid rgb(255, 255, 255);
+}
+.gcp_slider .bx-wrapper .bx-viewport{
+	box-shadow: 0px 0px 0px rgb(204, 204, 204);
+	border: 0px solid rgb(255, 255, 255);
+	background: none;
+	overflow: hidden;
+}
+.gcp_slider .bx-wrapper .bx-viewport ul {
+	margin: 0px auto;
+ }
+.gcp_slider .bx-wrapper .bx-viewport ul li{
+	margin: 0px;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+	border: 0px solid rgb(222, 222, 222);
+	border-radius: 0px;
+}
+.gcp_slider .bx-wrapper ul li img{
+	width:100%!important;
+	margin: 0px auto;
+}
+
+.gcp_slider .bx-wrapper .bx-next {
+	background: transparent url("../images/controls.png") no-repeat scroll -43px -32px;
+}
+.gcp_slider .bx-wrapper .bx-prev {
+	left: 0px;
+	background: transparent url("../images/controls.png") no-repeat scroll 0px -32px;
+}
+
+.lp .photo_cp ul li .img {
+	width: 100%;
+	height: auto;
+	padding: 15px 0px 10px;
+	text-align: center;
+	margin: 0px auto;
+}

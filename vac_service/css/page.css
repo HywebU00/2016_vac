@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------------------------[ page ]-----*/
+.page {
+	margin: 0px 8px 0px 0px;
+	*margin: 0px 14px 0px -6px;
+	color: #333333;
+	clear: both;
+	text-align:center;
+	padding:2px 0;
+	background:url(../images/page_bg.gif) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.page span { }
+.page span em {
+	font-style: normal;
+	color: #000;
+	margin: 0 2px;
+	font-weight: bold;
+}
+.page ul {
+	margin: 5px 0;
+	padding: 0px;
+	display:inline;
+	text-align:center;	
+}
+.page ul li {
+	display: inline;
+	margin-right: 3px;
+	line-height: 25px;
+	padding:0px;	
+}
+.page ul li a {
+	color:#ff7200;
+	text-decoration: none;
+	text-align: center;
+	padding: 0px 2px;
+	text-decoration: underline;
+}
+.page ul li a:hover {
+	color: #036;
+}
+.page ul .here {
+	display: inline;
+	padding: 0px 2px;
+	color: #000;
+}
+.page span ul {}
+.page span ul li {}
+.page span ul .here {}
+.page span ul li a {}
+
+
+.page a{
+	color: #c34e02;
+	text-decoration: none;
+}
+.page a:hover{
+	color: #CC0000;
+	text-decoration: underline;
+}
+.page .selectPage input{
+	border:1px solid #999;
+	color:#999;
+	background: #fff;
+}
+.page .rss{
+	padding:5px 0 0 0; 
+}
+
+/*--------------------------------------------------------------------------------[ page_II ]-----*/
+.page li.first img, 
+.page li.prev img,
+.page li.next img, 
+.page li.last img {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+.page li.prevten img, 
+.page li.nextten img{
+	width: 45px;
+	height: 16px;
+	vertical-align: middle;
+}
+.page li.prev, 
+.page li.next { 
+	background-image:none;
+	margin: 0px; 
+	padding:0px;
+}
+.page li.first a:hover, 
+.page li.prev a:hover, 
+.page li.next a:hover, 
+.page li.last a:hover, 
+.page li.prevten a:hover, 
+.page li.nextten a:hover {
+	border:none;	
+}
+
+/*--------------------------------------------------------------------------------[ page_BG_img ]-----*/
+.page li.first a {	
+	background-image: url(../images/first.gif);
+	background-repeat: no-repeat;	
+}
+.page li.prev a {
+	background-image: url(../images/prev.gif);
+	background-repeat: no-repeat;
+}
+.page li.next a {
+	background-image: url(../images/next.gif);
+	background-repeat: no-repeat;
+}
+.page li.prevten a {
+	background-image: url(../images/prevnext.gif);
+	background-repeat: no-repeat;
+}
+.page li.nextten a {
+	background-image: url(../images/nextten.gif);
+	background-repeat: no-repeat;
+}
+.page li.last a {
+	background-image: url(../images/last.gif);
+	background-repeat: no-repeat;
+}
+
+
+/*  html CODE------------------------------------
+<div class="page">
+	<span>共<em>26</em>筆資料第<em>1/2</em>頁</span>｜
+	<ul>
+		<li class="first"><a href="#" title="第一頁"><img src="images/space.gif" alt="第一頁" title="第一頁"></a></li>
+		<li class="prev"><a href="#" title="上一頁"><img src="images/space.gif" alt="上一頁" title="上一頁"></a></li>
+		<li class="here">1</li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li class="next"><a href="#" title="下一頁"><img src="images/space.gif" alt="下一頁" title="下一頁"></a></li>
+		<li class="last"><a href="#" title="最後一頁"><img src="images/space.gif" alt="最後一頁" title="最後一頁"></a></li>
+	</ul>
+｜<span>每頁顯示
+		<ul>
+			<li class="here">15</li>
+			<li><a href="#" title="每頁顯示45筆">45</a></li>
+			<li><a href="#" title="每頁顯示300筆">300</a></li>
+		</ul>
+	筆</span>
+</div>
+
+*/
