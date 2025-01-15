@@ -2,7 +2,7 @@
 /* CSS Document */
 
 .mpwrap {
-	position: relative;	
+	position: relative;
 	max-width: 980px;
 	width: 100%;
 	margin: 0px auto;
@@ -13,7 +13,7 @@
 	background-size: cover;
 	height: 175px;
 	position: relative;
-	
+
 }
 .logo {
 	position: absolute;
@@ -87,7 +87,7 @@
 		color: #ccc;
 		padding-left:8px;
 	}
-	.header .nav ul li:first-child:after, 
+	.header .nav ul li:first-child:after,
 	.header .nav ul li:last-child:after{
 		content: "";
 	}
@@ -157,17 +157,17 @@
 	}
 
 	/* IE8 uses \0 */
-	@media all\0 { 
+	@media all\0 {
 		.center .slider {
 			width: 95%;
-		}       
-	} 
+		}
+	}
 	/* IE9 uses \9 */
-	@media all and (monochrome:0) { 
+	@media all and (monochrome:0) {
 		.center .slider {
 			width: 97%;
-		}      
-	} 
+		}
+	}
 	.center .slider2 {
 		width: 95%;
 		margin: 10px 0px 20px 10px;
@@ -235,7 +235,7 @@
 	.listlink ul{margin:0 0px;}
 	.listlink ul li {
 		padding: 3px 0 3px 12px;
-		margin-left: 0px; 
+		margin-left: 0px;
 		float: left;
 		width:22%;
 		position: relative;
@@ -257,7 +257,7 @@
 	}
 	.local-item li{
 		width: 30%; display: inline-block;position: relative;
-		vertical-align:top; padding:0; margin-right:12px; 
+		vertical-align:top; padding:0; margin-right:12px;
 		background-repeat: no-repeat;  position: relative;
 		background-position: center center;transition: .3s ease-out;
 	}
@@ -268,10 +268,10 @@
 		position: relative;
 		display: block;
 		overflow: hidden;
-		margin:1em auto; 
+		margin:1em auto;
 
 	}
-	.local-item li .item img{ 	
+	.local-item li .item img{
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -386,7 +386,7 @@
 	width:380px;
 	max-width:380px;
 	height: auto;
-	
+
 }
 .mp .center .photo_book ul li .img02 {
 	padding: 5px;
@@ -512,7 +512,7 @@
 	}
 	.mainList ul li a, .mainList02 ul li a {
 		color: #555;
-		display: block;	
+		display: block;
 		border-bottom: #CCC dotted 1px;
 		background: url(../images/li_icon01.png) no-repeat 0px 10px;
 		padding: 3px 0 3px 17px;
@@ -716,7 +716,7 @@
 			width: 200px;
 		}
 
-	}	
+	}
 
 	@media screen and (max-width:767px){
 		body{
@@ -764,7 +764,7 @@
 			box-shadow: 0px 2px 5px rgba(0%,0%,0%,0.5);
 			border: #CCC 1px solid;
 			margin: 5px 19px 0px 15px;
-		}	 
+		}
 		.mpwrap {
 			width:100%;
 		}
@@ -800,7 +800,7 @@
 			color:#FFF;
 		}
 		.header .nav ul li a {
-			color:#FFF;line-height: 1em;font-size: 1.25em; 
+			color:#FFF;line-height: 1em;font-size: 1.25em;
 		}
 		.header .nav ul li a:hover {
 			color:#09C;
@@ -830,7 +830,7 @@
 		/*mainList mainList02*/
 		.mainList ul{ margin-left: 0em; }
 		.mainList ul li{padding:0;}
-		.mainList ul li a, .mainList02 ul li a{ 
+		.mainList ul li a, .mainList02 ul li a{
 			width: auto;overflow: inherit;white-space: inherit; text-overflow: inherit;-o-text-overflow: inherit; }
 			.mainList, .mainList02 {
 				float:none;
@@ -971,3 +971,15 @@
 }
 
 */
+.sloganBanner{
+}
+@media (max-width: 767px) {
+	.sloganBanner{
+		margin-top: 2em;
+	}
+}
+.sloganBanner .container a img{
+	width: 100%;
+	max-width: 1156px;
+	height: auto;
+}

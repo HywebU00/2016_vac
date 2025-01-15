@@ -2706,7 +2706,7 @@ a.specialArea:hover {
     .map.map-home .location1 {
       background: url(../images/a2.png) 0 0 no-repeat;
     }
-    /* 20230331新增*/      
+    /* 20230331新增*/
     .map.map-service .location1 {
       background: url(../images/a2.png) 0 0 no-repeat;
     }
@@ -2732,7 +2732,7 @@ a.specialArea:hover {
     .map.map-home .location2 {
       background: url(../images/b2.png) 0 0 no-repeat;
     }
-    /* 20230331新增*/      
+    /* 20230331新增*/
     .map.map-service .location2 {
       background: url(../images/b2.png) 0 0 no-repeat;
     }
@@ -2758,7 +2758,7 @@ a.specialArea:hover {
     .map.map-home .location3 {
       background: url(../images/c2.png) 0 0 no-repeat;
     }
-    /* 20230331新增*/      
+    /* 20230331新增*/
     .map.map-service .location3 {
       background: url(../images/c2.png) 0 0 no-repeat;
     }
@@ -2799,7 +2799,7 @@ a.specialArea:hover {
     .map.map-home .location4 {
       background: url(../images/d2.png) 0 0 no-repeat;
     }
-    /* 20230331新增*/    
+    /* 20230331新增*/
     .map.map-service .location4 {
       background: url(../images/d2.png) 0 0 no-repeat;
     }
@@ -2809,16 +2809,16 @@ a.specialArea:hover {
     }
 
     .map .location4 li:before {
-      background: #caa00f;      
+      background: #caa00f;
     }
 
-    /* 20230331新增*/  
+    /* 20230331新增*/
     .map.map-med .location4 li {
       background: #6197da;
     }
-    /* 20230331新增*/  
+    /* 20230331新增*/
     .map.map-med .location4 li:before {
-      background: #2c71c7;      
+      background: #2c71c7;
     }
 
     .map .location5 {
@@ -2834,7 +2834,7 @@ a.specialArea:hover {
     .map.map-home .location5 {
       background: url(../images/e2.png) 0 0 no-repeat;
     }
-    /* 20230331新增*/      
+    /* 20230331新增*/
     .map.map-service .location5 {
       background: url(../images/e2.png) 0 0 no-repeat;
     }
@@ -7997,4 +7997,19 @@ a.specialArea:hover {
   .serviceList li a {
     padding-top: 8px;
   }
+}
+
+
+.sloganBanner{
+padding: 1em 0;
+}
+@media (max-width: 767px) {
+  .sloganBanner{
+    padding: .5em 0;
+    }
+}
+.sloganBanner .container a img{
+  width: 100%;
+  max-width: 1156px;
+  height: auto;
 }
