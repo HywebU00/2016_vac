@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*--------------------[ mlmenu_左欄設定]--------------------*/	
+/*--------------------[ mlmenu_左欄設定]--------------------*/
 
 .leftbg .mlmenu {
 	background: none;
@@ -12,7 +12,7 @@
 	display: block;
 	margin: 0 0 5px 0px;
 	text-align: left;
-		
+
 }
 .leftbg .mlmenu ul li {
 	line-height: 2em;
@@ -59,17 +59,18 @@
 	color: #9285b4;
 	background-color: transparent;
 		}
-/*--------------------[ mlmenu_左欄設定END]--------------------*/	
+/*--------------------[ mlmenu_左欄設定END]--------------------*/
 
 
-/*--------------------[ mlmenu_第一階控制 ]--------------------*/	
+/*--------------------[ mlmenu_第一階控制 ]--------------------*/
 .header .mlmenu {
 	margin: 0px auto;
 	clear: both;
 	text-align: center;
 	width: 100%;
-	position: absolute;
-	top: 167px;
+	/* position: absolute; */
+	/* top: 167px; */
+	margin-top: 170px;
 	z-index: 9;
 	background-color: #09479b;
 }
@@ -78,14 +79,17 @@
 	text-align: center;
 	margin: 0 auto;
 	display: inline-block;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .header .mlmenu ul li {
-	display: inline;
-	float: left;
+	/* display: inline;
+	float: left; */
 	/**/
 	position: relative;
 }
-.header .mlmenu ul > li:before { 
+.header .mlmenu ul > li:before {
 	content: '/';
 	color: #1a60be;
 	position: absolute;
@@ -103,7 +107,7 @@
 	padding:8px;
 	display: block;
 	cursor: pointer;
-}	
+}
 .header .mlmenu ul li a:hover {
 	color: #089eeb;
 }
@@ -112,7 +116,7 @@
 	left: 0;
 	right:0;
 	position: absolute;
-	/* display: block; */
+	display: block;
 	/*------預設選單先關掉,再由js控制load完所有資料再送出----------*/
 	display: none;
 	padding: 0px;
@@ -140,7 +144,7 @@
 	margin: 0px 0px;
 	text-align: left;
 }
-.header .mlmenu ul li ul li:hover a{ 
+.header .mlmenu ul li ul li:hover a{
 	background-color: #089eeb;color: #fff; }
 /*end of -----------------------menu*/
 
@@ -166,7 +170,6 @@
 	height: 100%;
 	position: absolute;
 	left: -100%;
-	cursor: pointer;
 }
 .openMenu.show, .closeMenu.show {
 	left: 0;
@@ -201,7 +204,7 @@
 @media screen and (max-width:767px){
 
 .leftbg .mlmenu ul li ul, .mlmenu.show ul li ul{
-	display:block;	
+	display:block;
 }
 
 .leftbg .mlmenu ul li a:before,.mlmenu.show ul li a:before {
@@ -237,14 +240,15 @@ margin: 0 0 0 0px;
 }
 .leftbg .mlmenu ul li a ,.mlmenu.show ul li a {
  display:block ;
- /* padding:8px 5px 8px 25px; */
+ padding:8px 5px 8px 25px;
  color:#333;
  text-decoration:none;
 }
-.mlmenu.show ul li{display: block; width: 100%;}
+.mlmenu.show ul li{display: block; float: none;}
 .mlmenu.show ul li a {
  display:block !important;
- padding:8px; text-align: left;
+ padding:8px 5px 8px 0px;
+ width:100%;
  text-decoration:none;
 }
 .leftbg .mlmenu ul li a:hover ,.mlmenu.show ul li a:hover{
@@ -260,35 +264,34 @@ margin: 0 0 0 0px;
  	margin-left:0;
 }
 .mobileMenu.show {
- 	left:150px;
+ 	left:160px;
 }
 .mlmenu.show {/*.nav.show不要有空格才會同時套用兩個*/
  	left:0;
+	margin-top: 0;
 }
 .mpwrap.show {
  	margin-left:150px;
 }
-.leftbg .mlmenu ul li ul li ,.mlmenu.show ul li ul li{ 
-	
-	background:url(../images/li_icon01.png) no-repeat 5px 10px; 
-	border-bottom:1px dotted #ddd;
+.leftbg .mlmenu ul li ul li ,.mlmenu.show ul li ul li{
+	padding-left:20px;
+	background:url(../images/li_icon01.png) no-repeat 5px 8px;
+	border-bottom:0px;
 }
-.leftbg .mlmenu ul li ul li a ,.mlmenu.show ul li ul li a{ 
-	padding:6px 6px 6px 20px; 
+.leftbg .mlmenu ul li ul li a ,.mlmenu.show ul li ul li a{
+	padding:0px;
 	color:#333;
-	width: 130px;
 	background:none;
-	border-bottom: 0;
 }
-.leftbg .mlmenu ul li ul li a:hover ,.mlmenu.show ul li ul li a:hover{ 
+.leftbg .mlmenu ul li ul li a:hover ,.mlmenu.show ul li ul li a:hover{
 	color: #233D7E;
 	background:none;
 	display: block !important;
 
 }
-.leftbg .mlmenu ul li ul ,.mlmenu.show ul li ul { 
+.leftbg .mlmenu ul li ul ,.mlmenu.show ul li ul {
 	background:none;
-	display: none;
+	display: block !important;
 	padding: 0px;
 	float: none;
 	z-index: 99;
@@ -297,7 +300,7 @@ margin: 0 0 0 0px;
 	border:none;
 	box-shadow: none;
 	position: inherit;
-	
+
 }
 
 

@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /* CSS Document */
 @import url("mp.css");
 @import url("friendly.css");
@@ -20,8 +20,8 @@
 a:hover{color:#000;text-decoration:underline;}
 a:focus{color:#000;text-decoration:none;outline:1px solid orange;}
 * a:focus,input:focus,textarea:focus,.bigbanner div a:hover img,.bigbanner div a:focus img,
-#container .tabpanel li.tab:hover,#container .tabpanel li.tab:focus{
-	outline: 1px solid orange;
+#container .tabpanel li.tab:hover,#container .tabpanel li.tab:focus{ 
+	outline: 1px solid orange; 
 }
 a.goCenter{  color: #fff ; opacity: 0;filter: alpha(opacity=0); }
 body > a.goCenter{position: absolute; z-index: 9;}
@@ -92,15 +92,4 @@ a{ color:#5f5c80;outline: 0;}/*veela0819*/
 .clear{ clear:both;}
 
 
-.sloganBanner{
-}
-@media (max-width: 767px) {
-	.sloganBanner{
-		margin-top: 2em;
-	}
-}
-.sloganBanner .container a img{
-	width: 100%;
-	max-width: 1156px;
-	height: auto;
-}
+
