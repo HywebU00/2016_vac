@@ -79,14 +79,13 @@
 	text-align: center;
 	margin: 0 auto;
 	display: inline-block;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap; */
 }
 .header .mlmenu ul li {
-	/* display: inline;
-	float: left; */
-	/**/
+	display: inline;
+	float: left;
 	position: relative;
 }
 .header .mlmenu ul > li:before {
