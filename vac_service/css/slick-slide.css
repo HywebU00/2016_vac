@@ -44,7 +44,7 @@
   .adbanner div { margin: 0 15px 0 0; }
   .adbanner div img { width: 180px; height: 50px }
   .adbanner a:focus>img { border: 1px solid #09F }
-  
+
   .slick-prev { left: 15px }
   .slick-next { right: 20px }
   .slick-prev:before, .slick-next:before { font-size: 30px; opacity: .75; color: #666; }
@@ -54,4 +54,3 @@
   @media (max-width: 350px) {
     .adbanner { width: 350px;margin: 0 20px 0 5px; }
   }
- 
