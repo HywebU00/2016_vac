@@ -1,6 +1,6 @@
-/*------底圖*/	
+/*------底圖*/
 $(document).ready(function(){
-	
+
 $('.adbanner').slick({
 	dots: false,//顯示原點
 	speed: 3000,
@@ -13,22 +13,22 @@ $('.adbanner').slick({
 		{
 			breakpoint: 980,
 			settings: {
-				slidesToShow: 4,
-				slidesToScroll: 4,
+				slidesToShow: 3,
+				slidesToScroll: 3,
 			}
 		},
 		{
 			breakpoint: 690,
 			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3
+				slidesToShow: 2,
+				slidesToScroll: 2
 			}
 		},
 		{
-			breakpoint: 550,
+			breakpoint: 500,
 			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
+				slidesToShow: 1,
+				slidesToScroll:1
 			}
 		},
 		{
@@ -38,16 +38,16 @@ $('.adbanner').slick({
 				slidesToScroll: 1
 			}
 		}
-	
+
 		// You can unslick at a given breakpoint now by adding:
 		// settings: "unslick"
 		// instead of a settings object
 	]
-});	
+});
 //click button then pause it.
 $('.slick-number>li,.slick-prev,.slick-next').on('click',function(){
 	$(".bigbanner").slick('slickPause');
-});	
+});
 });
 
 

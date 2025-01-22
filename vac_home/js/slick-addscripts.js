@@ -11,7 +11,7 @@ $('.adbanner').slick({
 	slidesToScroll: 4,
 	responsive: [
 		{
-			breakpoint: 940,
+			breakpoint: 980,
 			settings: {
 				slidesToShow: 3,
 				slidesToScroll: 3,
@@ -20,15 +20,15 @@ $('.adbanner').slick({
 		{
 			breakpoint: 690,
 			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3
+				slidesToShow: 2,
+				slidesToScroll: 2
 			}
 		},
 		{
-			breakpoint: 550,
+			breakpoint: 500,
 			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
+				slidesToShow: 1,
+				slidesToScroll: 1
 			}
 		},
 		{
