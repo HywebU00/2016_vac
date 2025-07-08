@@ -1,85 +1,328 @@
-@font-face { font-family: 'Pacifico'; src: url('pacifico.eot'); src: url('pacifico.eot?#iefix') format('embedded-opentype'), url('pacifico.woff') format('woff'), url('pacifico.ttf') format('truetype'), url('pacifico.svg#Pacifico') format('svg'); }
+@font-face {
+  font-family: 'Pacifico';
+  src: url('pacifico.eot');
+  src: url('pacifico.eot?#iefix') format('embedded-opentype'), url('pacifico.woff') format('woff'), url('pacifico.ttf') format('truetype'), url('pacifico.svg#Pacifico') format('svg');
+}
 /*slick-slide*/
 /*-*/
 
-.bigbanner .slick-slide a{ position: relative;display: block; z-index: 999; overflow: hidden; }
-.bigbanner .slick-slide a:focus:before{ content:"";position: absolute;width: 100%;height: 100%;display: block;box-shadow: 0 0 0 5px #21baff inset;z-index: 9; }
-.bigbanner .slick-slide a:after { padding-top: 48.5%; content: ""; display: block; }
+.bigbanner .slick-slide a {
+  position: relative;
+  display: block;
+  z-index: 999;
+  overflow: hidden;
+}
+.bigbanner .slick-slide a:focus:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-shadow: 0 0 0 5px #ff6a00 inset;
+  z-index: 9;
+}
+.bigbanner .slick-slide a:after {
+  padding-top: 48.5%;
+  content: '';
+  display: block;
+}
 
-.bigbanner div{ height: 365px;}
-.bigbanner div img { 
-	position: absolute; top: 0; bottom: 0; right: 0; left: 0; 
-	max-width:100%; width: 100%; height: 100%; margin:0 auto; object-fit: cover; 
+.bigbanner div {
+  height: 365px;
+}
+.bigbanner div img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: cover;
 }
 .bigbanner div span {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	display: block;
-	padding:13px 16% 5px 5px;
-	background-image: url(../images/sketch_bg.png);
-	background-repeat: repeat;
-	min-height:45px;
-	background-position: 0 0;
-	color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  padding: 13px 16% 5px 5px;
+  background-image: url(../images/sketch_bg.png);
+  background-repeat: repeat;
+  min-height: 45px;
+  background-position: 0 0;
+  color: #fff;
 }
-@media (max-width: 1200px)and (min-width: 992px) {
-
-	.bigbanner .slick-slide a:after { padding-top: 59%;}
-	.bigbanner .slick-slide img { width: 100%; object-fit: cover; }
+@media (max-width: 1200px) and (min-width: 992px) {
+  .bigbanner .slick-slide a:after {
+    padding-top: 59%;
+  }
+  .bigbanner .slick-slide img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
-.bigbanner .slick-prev:before, .bigbanner .slick-next:before { font-size: 40px }
-.bigbanner .slick-number { position: absolute; bottom: -3px; right: 0px }
-.bigbanner .slick-number li { float: left; list-style-type: none;  text-align: center; margin: 0 5px 0 0; border: none;}
+.bigbanner .slick-prev:before,
+.bigbanner .slick-next:before {
+  font-size: 2.5rem;
+}
+.bigbanner .slick-number {
+  position: absolute;
+  bottom: -3px;
+  right: 0px;
+}
+.bigbanner .slick-number li {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  margin: 0 5px 0 0;
+  border: none;
+}
 
-.bigbanner .slick-number li button{border:none;border-radius: 50%; background-color: #fff; width: 30px; height: 30px; line-height: 23px;}
-.bigbanner .slick-number li.slick-active button{ background-color: #5bc0de; }	
+.bigbanner .slick-number li button {
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 23px;
+}
+.bigbanner .slick-number li.slick-active button {
+  background-color: #5bc0de;
+}
 /*-è¼ªæ’­ç®­é ­*/
 /* .bigbanner .slick-next ,.bigbanner .slick-prev{font-size: 3em;} */
-.bigbanner .slick-next { right: 30px;z-index: 9; }
-.bigbanner .slick-prev { left: 15px;z-index: 9; }
+.bigbanner .slick-next {
+  right: 30px;
+  z-index: 9;
+}
+.bigbanner .slick-prev {
+  left: 15px;
+  z-index: 9;
+}
 /*-è¼ªæ’­é»žé»ž*/
-.bigbanner .slick-dots li button:before { opacity: 1; color: #fff }
-.bigbanner .slick-dots li button:hover:before, .bigbanner .slick-dots li button:focus:before { color: #fff }
-.bigbanner .slick-dots li.slick-active button:before { color: #17b3e6 }
-.bigbanner .slick-dots { top: 10px; text-align: right }
-.bigbanner .slick-prev:before, .bigbanner .slick-next:before {  color: #fff }
+.bigbanner .slick-dots li button:before {
+  opacity: 1;
+  color: #fff;
+}
+.bigbanner .slick-dots li button:hover:before,
+.bigbanner .slick-dots li button:focus:before {
+  color: #fff;
+}
+.bigbanner .slick-dots li.slick-active button:before {
+  color: #17b3e6;
+}
+.bigbanner .slick-dots {
+  top: 10px;
+  text-align: right;
+}
+.bigbanner .slick-prev:before,
+.bigbanner .slick-next:before {
+  color: #fff;
+}
 /*-è¼ªæ’­2*/
-.cp_photo { width: 100%; margin: 0px; padding: 0; clear: both; position: relative; }
-.cp_photo div a { position: relative; display: block; overflow: hidden; }
-.cp_photo div a:after { padding-top: 67%; content: ""; display: block; }
-.cp_photo div a img { position: absolute; top: 0; bottom: 0; right: 0; left: 0; max-width: 100%; max-height: 100%; margin: auto; }
-.cp_photo div span { position: absolute; bottom: 0px; color: #fff; width: 100%; padding: 10px; background-image: url(../images/sketch_bg.png); background-repeat: repeat; background-position: 0 0; text-align: center }
-.cp_photo .slick-prev:before, .cp_photo .slick-next:before { font-size: 40px }
+.cp_photo {
+  width: 100%;
+  margin: 0px;
+  padding: 0;
+  clear: both;
+  position: relative;
+}
+.cp_photo div a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.cp_photo div a:after {
+  padding-top: 67%;
+  content: '';
+  display: block;
+}
+.cp_photo div a img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.cp_photo div span {
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  background-image: url(../images/sketch_bg.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  text-align: center;
+}
+.cp_photo .slick-prev:before,
+.cp_photo .slick-next:before {
+  font-size: 2.5rem;
+}
 /*-è¼ªæ’­ç®­é ­*/
-.cp_photo .slick-next { right: 40px }
-.cp_photo .slick-prev { left: 20px }
-.cp_photo .slick-prev:before, .cp_photo .slick-next:before { color: #ccc }
+.cp_photo .slick-next {
+  right: 40px;
+}
+.cp_photo .slick-prev {
+  left: 20px;
+}
+.cp_photo .slick-prev:before,
+.cp_photo .slick-next:before {
+  color: #ccc;
+}
 /*-è¼ªæ’­é»žé»ž*/
-.cp_photo .slick-dots li button:hover:before, .cp_photo .slick-dots li button:focus:before { color: #1a8dce }
-.cp_photo .slick-dots li.slick-active button:before { color: #34495e }
-.cp_photo .slick-dots { bottom: -30px; margin: 0 }
-.cp_photo .slick-dots li button::before { font-size: 20px }/*-é»žé»žå¤§å°*/
-.cp .slick-dots li { margin: 0 5px }
-@media (min-width: 768px) and (max-width: 991px){
-	.bigbanner .slick-slide a:after{padding-top: 50.5%;}
+.cp_photo .slick-dots li button:hover:before,
+.cp_photo .slick-dots li button:focus:before {
+  color: #1a8dce;
 }
-@media (max-width: 767px){
-	.bigbanner div{ height: auto; }
-	.bigbanner .slick-number{
-		bottom: -5px; right: 0;
-	}
-	.bigbanner .slick-number:after{
-		position: absolute; content: '';
-		clear: both;
-	}
-	.slick-slider{ padding-bottom: 40px; }
+.cp_photo .slick-dots li.slick-active button:before {
+  color: #34495e;
 }
-@media (max-width: 480px){
-	.bigbanner div span { padding:5px;}
-	.bigbanner .slick-slide a:after{padding-top: 56%;}
-	.bigbanner .slick-prev, .bigbanner .slick-next{top:25%;} 
-	.bigbanner .slick-number{position: inherit;  margin: 6px auto;display: inline-block !important;text-align: center;width: 100%;}
-	.bigbanner .slick-number li{float: none; display: inline;}
+.cp_photo .slick-dots {
+  bottom: -30px;
+  margin: 0;
+}
+.cp_photo .slick-dots li button::before {
+  font-size: 1.25rem;
+} /*-é»žé»žå¤§å°*/
+.cp .slick-dots li {
+  margin: 0 5px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .bigbanner .slick-slide a:after {
+    padding-top: 50.5%;
+  }
+}
+@media (max-width: 767px) {
+  .bigbanner div {
+    height: auto;
+  }
+  .bigbanner .slick-number {
+    bottom: -5px;
+    right: 0;
+  }
+  .bigbanner .slick-number:after {
+    position: absolute;
+    content: '';
+    clear: both;
+  }
+  .slick-slider {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .bigbanner div span {
+    padding: 5px;
+  }
+  .bigbanner .slick-slide a:after {
+    padding-top: 56%;
+  }
+  .bigbanner .slick-prev,
+  .bigbanner .slick-next {
+    top: 25%;
+  }
+  .bigbanner .slick-number {
+    position: inherit;
+    margin: 6px auto;
+    display: inline-block !important;
+    text-align: center;
+    width: 100%;
+  }
+  .bigbanner .slick-number li {
+    float: none;
+    display: inline;
+  }
+}
+/* mpSliderBox 暫停播放按鈕樣式 */
+.mpSliderBox {
+  position: relative;
+}
+.mpSliderBox .slickControlBox {
+  position: absolute;
+  z-index: 1;
+}
+.mpSliderBox .slickControlBox button {
+  background: #000 url('../images/icon_stop.svg') no-repeat center center;
+  background-size: 16px auto;
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+  aspect-ratio: 1;
+  font-size: 0;
+  margin: 10px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  white-space: nowrap;
+}
+.mpSliderBox .slickControlBox button:focus-visible {
+  outline: solid 2px #ff6a00;
+}
+.mpSliderBox .slickControlBox button.active {
+  border: 2px solid #000;
+  flex: 0 0 auto;
+}
+.mpSliderBox .slickControlBox button span:last-child {
+  display: none;
+}
+.mpSliderBox .slickControlBox button.stop {
+  background: #000 url('../images/icon_play.svg') no-repeat center center;
+  background-size: 16px auto;
+}
+.mpSliderBox .slickControlBox button.stop span:first-child {
+  display: none;
+}
+.mpSliderBox .slickControlBox button.stop span:last-child {
+  display: block;
+}
+
+/* adbannerBox 暫停播放按鈕樣式 */
+.adbannerBox {
+  position: relative;
+}
+.adbannerBox .slickControlBox {
+  position: absolute;
+  z-index: 99;
+  top: -25px;
+  left: 50px;
+}
+.adbannerBox .slickControlBox button {
+  background: #000 url('../images/icon_stop.svg') no-repeat center center;
+  background-size: 16px auto;
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+  aspect-ratio: 1;
+  font-size: 0;
+  margin: 10px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  white-space: nowrap;
+}
+.adbannerBox .slickControlBox button:focus-visible {
+  outline: solid 2px #ff6a00;
+}
+.adbannerBox .slickControlBox button.active {
+  border: 2px solid #000;
+  flex: 0 0 auto;
+}
+.adbannerBox .slickControlBox button span:last-child {
+  display: none;
+}
+.adbannerBox .slickControlBox button.stop {
+  background: #000 url('../images/icon_play.svg') no-repeat center center;
+  background-size: 16px auto;
+}
+.adbannerBox .slickControlBox button.stop span:first-child {
+  display: none;
+}
+.adbannerBox .slickControlBox button.stop span:last-child {
+  display: block;
 }
