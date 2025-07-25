@@ -2,58 +2,59 @@
 /* CSS Document */
 
 .sitemap {
-	color: #666666;
-	vertical-align: top;	
+  color: #666666;
+  vertical-align: top;
 }
 .sitemap table {
-	clear: both;
-	width:98%;
-	border-collapse: collapse;  
+  clear: both;
+  width: 98%;
+  border-collapse: collapse;
 }
 .sitemap p {
-	margin: 5px 0 5px 20px;
-	line-height:160%;
-	
-	/*width: 500px;*/
+  margin: 5px 0 5px 20px;
+  line-height: 160%;
+
+  /*width: 500px;*/
 }
 
-.accesskeyDefine {	
-	line-height: 170%;
-	margin: 0 0 10px 25px;
+.accesskeyDefine {
+  line-height: 170%;
+  margin: 0 0 10px 25px;
 }
 .accesskeyDefine li {
-	list-style: circle;
-	margin: 0 0 0 25px;
+  list-style: circle;
+  margin: 0 0 0 25px;
 }
-.cascading {	
-	margin: 5px 25px 10px;	
-	padding:5px 10px;
-	margin:5px 0;
-	text-align:center;
-	
+.cascading {
+  margin: 5px 25px 10px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  text-align: center;
 }
 .cascading ul {
-	margin-left: 2em;
-	display: block !important;
+  margin-left: 2em;
+  display: block !important;
 }
 
 .cascading li {
-	margin: 0 0 4px;
-	line-height:190%;
-	text-align:left;
+  margin: 0 0 4px;
+  line-height: 190%;
+  text-align: left;
 }
-.cascading li a{
-	color:#66992b;/*veela0819*/
-	padding:3px;
-	display:block;
+.cascading li a {
+  color: #09479b; /*veela0819*/
+  padding: 3px;
+  display: block;
 }
-.cascading li li a{
-	font-size:100%;
-	color:#777;
-	text-decoration:underline;
-	border:0px;
-	padding:0px;
-	background-color:transparent;
-	font-weight:normal;
+.cascading li li a {
+  font-size: 100%;
+  color: #555;
+  text-decoration: underline;
+  border: 0px;
+  padding: 0px;
+  background-color: transparent;
+  font-weight: normal;
 }
-.cascading li a:hover{ color:#65bc00;/*veela0819*/}
+.cascading li a:hover {
+  color: #1156b6; /*veela0819*/
+}

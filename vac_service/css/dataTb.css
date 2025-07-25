@@ -36,7 +36,7 @@
 	border-right:1px solid #4595b7;
 	border-bottom:2px solid #DDD;
 	background: #59a3c2 url(none);
-	font-size:13px;
+	font-size:.813rem;
 }
 
 .dataTb table th img {
@@ -58,7 +58,7 @@
 .dataTb table th.date{ text-align:center}
 .dataTb table td.dept{ border:0px;border-top: 1px dotted #BBBBBB;	}
 .dataTb table td.date{ width:65px; word-break:break-all; text-align:center; }
-.dataTb table td.number{ text-align:center; font-size:12px; color:#5f5c80;}
+.dataTb table td.number{ text-align:center; font-size:.813rem; color:#5f5c80;}
 .dataTb table td a {
 	margin-right: 4px;
 }

@@ -3,14 +3,14 @@
 
 /*--------------------------------------------------------------------------------[  cp  ]----------*/
 .cp a {
-	color: #5f5c80;
+	color: #09479b;
 	text-decoration: underline;
 	word-break: break-all;
 }
 .cp h2, .cp h3, .cp h4, .cp h5, .cp h6 { margin: 0.5em 0 }
 .cp h2 { font-size: 1.562em; color: #088acd;border-bottom: none; }
 .cp h3 { font-size: 1.23em; color: #1a60be; }
-.cp h4 { font-size: 1.15em; color: #766FBE;}
+.cp h4 { font-size: 1.15em; color: #09479b;}
 .cp h5 { font-size: 1.08em; }
 .cp h6 { font-size: 1em; }
 
@@ -56,7 +56,7 @@
 }
 .cp .rightblock p{ 
 	clear:both;
-	color: #999;
+	color: #666;
 	padding:0;
 	
  }
@@ -99,7 +99,7 @@
 	background: url(../images/icon2.gif) no-repeat 0px 6px;
 }
 .cp .info span {
-	color: #766FBE;/*veela819*/
+	color: #09479b;/*veela819*/
 	padding: 0 5px 0 5px;
 	font-weight: normal;
 }
@@ -1075,7 +1075,7 @@ html>body .cp .servicetab li.over {
 .cp figure.image_right figcaption, .cp figure.image_left figcaption { max-width: 100%; }
 }
 /*- 燈箱效果修正*/
-.lb-data .lb-caption { font-size: 18px; line-height: 1.5em; font-weight: normal }
+.lb-data .lb-caption { font-size: 1.125rem; line-height: 1.5em; font-weight: normal }
 /*-相關照片*/
 .photolist { margin: 0; padding: 0; }
 

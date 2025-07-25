@@ -39,6 +39,7 @@
 </head>
 
 <body>
+  <a class="goCenter" href="#MainContent" tabindex="0">按 Enter 到主內容區</a>
   <div class="mobileMenu">
     <div class="openMenu"></div>
     <div class="closeMenu"></div>
@@ -102,7 +103,7 @@
       </div>
     </div>
     <!--mainContent-->
-    <div class="mainContent mp">
+    <div class="mainContent mp" id="MainContent" role="main">
       <table class="layout column1" border="0">
         <tr>
           <td class="center">
@@ -201,11 +202,11 @@
 
                 <div class="slider">
                   <ul class="bxslider">
-                    <li><img src="images/pic11.jpg" title="105年3月慶生會 伯伯尬唱志工好嗨" /></li>
-                    <li><img src="images/pic12.jpg" title="105年02月16日花蓮榮家歡喜過新年 邀請外住榮民用餐" /></li>
-                    <li><img src="images/pic13.jpg" title="105年02月16日花蓮榮家歡喜過新年 邀請外住榮民用餐" /></li>
-                    <li><img src="images/pic14.jpg" title="105年02月16日花蓮榮家歡喜過新年 邀請外住榮民用餐" /></li>
-                    <li><img src="images/pic15.jpg" title="105年02月16日花蓮榮家歡喜過新年 邀請外住榮民用餐" /></li>
+                    <li><a href="#"><img src="images/pic11.jpg" title="105年3月慶生會 伯伯尬唱志工好嗨" /></a></li>
+                    <li><a href="#"><img src="images/pic12.jpg" title="105年02月16日花蓮榮家歡喜過新年 邀請外住榮民用餐" /></a></li>
+                    <li><a href="#"><img src="images/pic13.jpg" title="105年02月16日花蓮榮家歡喜過新年 邀請外住榮民用餐" /></a></li>
+                    <li><a href="#"><img src="images/pic14.jpg" title="105年02月16日花蓮榮家歡喜過新年 邀請外住榮民用餐" /></a></li>
+                    <li><a href="#"><img src="images/pic15.jpg" title="105年02月16日花蓮榮家歡喜過新年 邀請外住榮民用餐" /></a></li>
                   </ul>
                 </div>
                 <div class="clear"></div>
@@ -330,22 +331,34 @@
         <li><a href="#"><img src="images/banner.jpg" alt=""></a></li>
       </ul>
     </div> -->
-    <div class="adbanner">
-      <div><a href="https://acedu.aac.moj.gov.tw/" title="廉潔教材資料庫網站"><img src="images/banner.jpg" alt=""></a></div>
-      <div><a href="https://www.vac.gov.tw/lp-2992-203.html" title="消保專區"><img src="images/banner.jpg" alt=""></a></div>
-      <div><a href="https://crpd.sfaa.gov.tw/" title="身心障礙者權利公約(CRPD)" target="_blank"><img src="images/banner.jpg" alt=""></a></div>
-      <div><a href="https://www.hakka.gov.tw/index.html" title="客家委員會全球資訊網" target="_blank"><img src="images/banner.jpg" alt=""></a></div>
-      <div><a href="https://165.npa.gov.tw" title="內政部警政署165全民防騙網" target="_blank"><img src="images/banner.jpg" alt=""></a></div>
-      <div><a href="https://aa.archives.gov.tw/" title="國家檔案資訊網" target="_blank"><img src="images/banner.jpg" alt="國家檔案資訊網"></a></div>
-      <div><a href="https://www.facebook.com/vhtyu" title="桃園榮譽國民之家臉書(facebook)" target="_blank"><img src="images/banner.jpg" alt="桃園榮譽國民之家臉書(facebook)"></a></div>
-      <div><a href="https://www.humanrights.moj.gov.tw/" title="法務部人權大步走" target="_blank"><img src="images/banner.jpg" alt="法務部人權大步走"></a></div>
-      <div><a href="http://greenliving.epa.gov.tw/" title="綠色生活資訊網" target="_blank"><img src="images/banner.jpg" alt="綠色生活資訊網"></a></div>
-      <div><a href="http://law.moj.gov.tw/" title="全國法規資料庫" target="_blank"><img src="images/banner.jpg" alt="全國法規資料庫"></a></div>
-      <div><a href="http://www.moj.gov.tw/" title="法務部" target="_blank"><img src="images/banner.jpg" alt="法務部"></a></div>
-      <div><a href="http://www.tycg.gov.tw/" title="桃園市政府" target="_blank"><img src="images/banner.jpg" alt="桃園市政府"></a></div>
-      <div><a href="https://gec.ey.gov.tw/" title="行政院性別平等委員會" target="_blank"><img src="images/banner.jpg" alt=""></a></div>
-      <div><a href="https://www.awakening.org.tw/" title="婦女新知基金會" target="_blank"><img src="images/banner.jpg alt=""></a></div>
-    </div>
+    <!-- adbannerBox -->
+      <div class="adbannerBox">
+        <div class="slickControlBox" role="group" aria-label="輪播控制">
+          <button type="button" aria-pressed="true" aria-label="切換播放狀態">
+            <span class="icon_stop" aria-hidden="false">暫停</span>
+            <span aria-hidden="true">播放</span>
+          </button>
+          </div>
+          <div class="adbanner">
+            <div><a href="https://acedu.aac.moj.gov.tw/" title="廉潔教材資料庫網站"><img src="images/banner.jpg" alt=""></a></div>
+        <div><a href="https://www.vac.gov.tw/lp-2992-203.html" title="消保專區"><img src="images/banner.jpg" alt=""></a></div>
+        <div><a href="https://crpd.sfaa.gov.tw/" title="身心障礙者權利公約(CRPD)" target="_blank"><img src="images/banner.jpg" alt=""></a></div>
+        <div><a href="https://www.hakka.gov.tw/index.html" title="客家委員會全球資訊網" target="_blank"><img src="images/banner.jpg" alt=""></a></div>
+        <div><a href="https://165.npa.gov.tw" title="內政部警政署165全民防騙網" target="_blank"><img src="images/banner.jpg" alt=""></a></div>
+        <div><a href="https://aa.archives.gov.tw/" title="國家檔案資訊網" target="_blank"><img src="images/banner.jpg" alt="國家檔案資訊網"></a></div>
+        <div><a href="https://www.facebook.com/vhtyu" title="桃園榮譽國民之家臉書(facebook)" target="_blank"><img src="images/banner.jpg" alt="桃園榮譽國民之家臉書(facebook)"></a></div>
+        <div><a href="https://www.humanrights.moj.gov.tw/" title="法務部人權大步走" target="_blank"><img src="images/banner.jpg" alt="法務部人權大步走"></a></div>
+        <div><a href="http://greenliving.epa.gov.tw/" title="綠色生活資訊網" target="_blank"><img src="images/banner.jpg" alt="綠色生活資訊網"></a></div>
+        <div><a href="http://law.moj.gov.tw/" title="全國法規資料庫" target="_blank"><img src="images/banner.jpg" alt="全國法規資料庫"></a></div>
+        <div><a href="http://www.moj.gov.tw/" title="法務部" target="_blank"><img src="images/banner.jpg" alt="法務部"></a></div>
+        <div><a href="http://www.tycg.gov.tw/" title="桃園市政府" target="_blank"><img src="images/banner.jpg" alt="桃園市政府"></a></div>
+        <div><a href="https://gec.ey.gov.tw/" title="行政院性別平等委員會" target="_blank"><img src="images/banner.jpg" alt=""></a></div>
+        <div><a href="https://www.awakening.org.tw/" title="婦女新知基金會" target="_blank"><img src="images/banner.jpg" alt=""></a></div>
+          </div>
+        </div>
+    
+      </div>
+      <!-- adbannerBox end -->
     </td>
     </tr>
     </table>

@@ -1,89 +1,89 @@
 @charset "UTF-8";
 /* CSS Document */
 * {
-	font-family: "Heiti TC", "儷黑Pro", "Microsoft JhengHei", "微軟正黑體", Arial;
+  font-family: 'Heiti TC', '儷黑Pro', 'Microsoft JhengHei', '微軟正黑體', Arial;
 }
 body {
-	background: url(../images/bg.png) repeat;
+  background: url(../images/bg.png) repeat;
 }
 .wrap {
-	position: relative;
-	width: 1000px;
-	margin: 0px auto;
-	box-shadow: 0px 0px 18px 0px #999;
+  position: relative;
+  width: 1000px;
+  margin: 0px auto;
+  box-shadow: 0px 0px 18px 0px #999;
 }
 /*--------mainNav Str----------*/
 .mainNav {
-	position: fixed;
-	top: 5px;
-	right:0px;
-	display: block;
-	width: 40px;
-	/*margin-left: 961px;*/
-	
+  position: fixed;
+  top: 5px;
+  right: 0px;
+  display: block;
+  width: 40px;
+  /*margin-left: 961px;*/
 }
 .mainNav li {
-	float:right;
-	width:50px;
-	margin: 0px 0px 0px 0px;
-	box-shadow: -1px 0px 5px 0px #999;
-	transition:all .1s linear;
-	height:110px\9;
-	*height:auto;
+  float: right;
+  width: 50px;
+  margin: 0px 0px 0px 0px;
+  box-shadow: -1px 0px 5px 0px #999;
+  transition: all 0.1s linear;
+  height: 110px\9;
+  *height: auto;
 }
 
-.mainNav li:hover{ width:58px;}
+.mainNav li:hover {
+  width: 58px;
+}
 
 .mainNav li a {
-	font-size: 15px;
-	font-weight: normal;
-	writing-mode: tb-rl;
-	-webkit-writing-mode: vertical-rl;
-	display: block;
-	color: #FFF;
-	padding: 10px 12px;
-	margin: 0px;
-	letter-spacing: 0.2em;
-	width:26px;
-	transition:all .1s linear;
-	
+  font-size: 0.938rem;
+  font-weight: normal;
+  writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  display: block;
+  color: #fff;
+  padding: 10px 12px;
+  margin: 0px;
+  letter-spacing: 0.2em;
+  width: 26px;
+  transition: all 0.1s linear;
 }
 .mainNav li a:hover {
-	color:#FFF;
-	width:34px;
+  color: #fff;
+  width: 34px;
 }
 .mainNav .mn01 a {
-	background: #6ea196;
+  background: #6ea196;
 }
 .mainNav .mn02 a {
-	background: #26b2a6;
+  background: #26b2a6;
 }
 .mainNav .mn03 a {
-	background: #38bee5;
+  background: #38bee5;
 }
 .mainNav .mn04 a {
-	background: #608ab5;
+  background: #608ab5;
 }
 .mainNav .mn05 a {
-	background: #3c7ec1;
+  background: #3c7ec1;
 }
 .mainNav .mn06 a {
-	background: #1a5694;
+  background: #1a5694;
 }
 /*--------mainNav End----------*/
 
-.scrollBtn01{
-	position: absolute;
-	left: 465px;
-	top: 617px;
+.scrollBtn01 {
+  position: absolute;
+  left: 465px;
+  top: 617px;
 }
 .scrollBtn02 {
-	position: absolute;
-	left: 465px;
-	top: 1263px;
+  position: absolute;
+  left: 465px;
+  top: 1263px;
 }
 .scrollBtn03 {
-	position: absolute;
-	left: 465px;
-	top: 1909px;
+  position: absolute;
+  left: 465px;
+  top: 1909px;
 }

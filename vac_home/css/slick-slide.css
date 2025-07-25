@@ -1,60 +1,254 @@
-@font-face { font-family: 'Pacifico'; src: url('pacifico.eot'); src: url('pacifico.eot?#iefix') format('embedded-opentype'), url('pacifico.woff') format('woff'), url('pacifico.ttf') format('truetype'), url('pacifico.svg#Pacifico') format('svg'); }
+@font-face {
+  font-family: 'Pacifico';
+  src: url('pacifico.eot');
+  src: url('pacifico.eot?#iefix') format('embedded-opentype'), url('pacifico.woff') format('woff'), url('pacifico.ttf') format('truetype'), url('pacifico.svg#Pacifico') format('svg');
+}
 /*slick-slide*/
 /*-*/
-.bigbanner .slick-slide { position: relative; z-index: 999; overflow: hidden; }
-.bigbanner .slick-slide:after { padding-top: 48%; content: ""; display: block; }
-.bigbanner .slick-slide img { position: absolute; top: 0; bottom: 0; right: 0; left: 0; width: 120%; max-height: 100%; margin: auto; }
-.bigbanner div span { position: absolute; bottom: 0; background-image: url(../images/sketch_bg.png); background-repeat: repeat; background-position: 0 0; color: #fff; padding: 10px; width: 100%; }
-@media (max-width: 1200px)and (min-width: 992px) {
-.bigbanner .slick-slide:after { padding-top: 48%; }
-.bigbanner .slick-slide img { width: 100%; object-fit: cover; }
-}
-.bigbanner .slick-prev:before, .bigbanner .slick-next:before { font-size: 40px }
-.bigbanner .slick-number { position: absolute; bottom: 35px; right: 0px }
-.bigbanner .slick-number li { float: left; list-style-type: none; margin: 0 5px 0 0; border: none; }
-/*-輪播箭頭*/
-.bigbanner .slick-next { right: 30px }
-.bigbanner .slick-prev { left: 15px }
-/*-輪播點點*/
-.bigbanner .slick-dots li button:before { opacity: 1; color: #fff }
-.bigbanner .slick-dots li button:hover:before, .bigbanner .slick-dots li button:focus:before { color: #fff }
-.bigbanner .slick-dots li.slick-active button:before { color: #17b3e6 }
-.bigbanner .slick-dots { top: 10px; text-align: right }
-.bigbanner .slick-prev:before, .bigbanner .slick-next:before { color: #fff }
-/*-輪播2*/
-.cp_photo { width: 100%; margin: 0px; padding: 0; clear: both; position: relative; }
-.cp_photo div a { position: relative; display: block; overflow: hidden; }
-.cp_photo div a:after { padding-top: 67%; content: ""; display: block; }
-.cp_photo div a img { position: absolute; top: 0; bottom: 0; right: 0; left: 0; max-width: 100%; max-height: 100%; margin: auto; }
-.cp_photo div span { position: absolute; bottom: 0px; color: #fff; width: 100%; padding: 10px; background-image: url(../images/sketch_bg.png); background-repeat: repeat; background-position: 0 0; text-align: center }
-.cp_photo .slick-prev:before, .cp_photo .slick-next:before { font-size: 40px }
-/*-輪播箭頭*/
-.cp_photo .slick-next { right: 40px }
-.cp_photo .slick-prev { left: 20px }
-.cp_photo .slick-prev:before, .cp_photo .slick-next:before { color: #ccc }
-/*-輪播點點*/
-.cp_photo .slick-dots li button:hover:before, .cp_photo .slick-dots li button:focus:before { color: #1a8dce }
-.cp_photo .slick-dots li.slick-active button:before { color: #34495e }
-.cp_photo .slick-dots { bottom: -30px; margin: 0 }
-.cp_photo .slick-dots li button::before { font-size: 20px }/*-點點大小*/
-.cp .slick-dots li { margin: 0 5px }
-
- /*adbanner*/
- .bottomBanner{
-  width: 100%;
+.bigbanner .slick-slide {
   position: relative;
- }
-  .adbanner { background-color: #e6e6e6; padding: 25px 20px 25px 60px;text-align: center;box-sizing: border-box;overflow: hidden; min-width: 100%; width: 0; }
-  .adbanner div { margin: 0 15px 0 0; }
-  .adbanner div img { width: 180px; height: 50px;margin: 0 auto; }
-  .adbanner a:focus>img { border: 1px solid #09F }
+  z-index: 999;
+  overflow: hidden;
+}
+.bigbanner .slick-slide:after {
+  padding-top: 48%;
+  content: '';
+  display: block;
+}
+.bigbanner .slick-slide img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 120%;
+  max-height: 100%;
+  margin: auto;
+}
+.bigbanner div span {
+  position: absolute;
+  bottom: 0;
+  background-image: url(../images/sketch_bg.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .bigbanner .slick-slide:after {
+    padding-top: 48%;
+  }
+  .bigbanner .slick-slide img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.bigbanner .slick-prev:before,
+.bigbanner .slick-next:before {
+  font-size: 2.5rem;
+}
+.bigbanner .slick-number {
+  position: absolute;
+  bottom: 35px;
+  right: 0px;
+}
+.bigbanner .slick-number li {
+  float: left;
+  list-style-type: none;
+  margin: 0 5px 0 0;
+  border: none;
+}
+/*-輪播箭頭*/
+.bigbanner .slick-next {
+  right: 30px;
+}
+.bigbanner .slick-prev {
+  left: 15px;
+}
+/*-輪播點點*/
+.bigbanner .slick-dots li button:before {
+  opacity: 1;
+  color: #fff;
+}
+.bigbanner .slick-dots li button:hover:before,
+.bigbanner .slick-dots li button:focus:before {
+  color: #fff;
+}
+.bigbanner .slick-dots li.slick-active button:before {
+  color: #17b3e6;
+}
+.bigbanner .slick-dots {
+  top: 10px;
+  text-align: right;
+}
+.bigbanner .slick-prev:before,
+.bigbanner .slick-next:before {
+  color: #fff;
+}
+/*-輪播2*/
+.cp_photo {
+  width: 100%;
+  margin: 0px;
+  padding: 0;
+  clear: both;
+  position: relative;
+}
+.cp_photo div a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.cp_photo div a:after {
+  padding-top: 67%;
+  content: '';
+  display: block;
+}
+.cp_photo div a img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.cp_photo div span {
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  background-image: url(../images/sketch_bg.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  text-align: center;
+}
+.cp_photo .slick-prev:before,
+.cp_photo .slick-next:before {
+  font-size: 2.5rem;
+}
+/*-輪播箭頭*/
+.cp_photo .slick-next {
+  right: 40px;
+}
+.cp_photo .slick-prev {
+  left: 20px;
+}
+.cp_photo .slick-prev:before,
+.cp_photo .slick-next:before {
+  color: #ccc;
+}
+/*-輪播點點*/
+.cp_photo .slick-dots li button:hover:before,
+.cp_photo .slick-dots li button:focus:before {
+  color: #1a8dce;
+}
+.cp_photo .slick-dots li.slick-active button:before {
+  color: #34495e;
+}
+.cp_photo .slick-dots {
+  bottom: -30px;
+  margin: 0;
+}
+.cp_photo .slick-dots li button::before {
+  font-size: 1.25rem;
+} /*-點點大小*/
+.cp .slick-dots li {
+  margin: 0 5px;
+}
 
-  .slick-prev { left: 15px }
-  .slick-next { right: 20px }
-  .slick-prev:before, .slick-next:before { font-size: 30px; opacity: .75; color: #666; }
-  @media (max-width: 420px) {
-    .adbanner { margin: 0 20px 0 15px; }
+/*adbanner*/
+.adbanner {
+  background-color: #e6e6e6;
+  padding: 25px 20px 25px 60px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-width: 100%;
+  width: 0;
+}
+.adbanner div {
+  margin: 0 15px 0 0;
+}
+.adbanner div img {
+  width: 180px;
+  height: 50px;
+  margin: 0 auto;
+}
+.adbanner a:focus > img {
+  border: 1px solid #09f;
+}
+
+.slick-prev {
+  left: 15px;
+}
+.slick-next {
+  right: 20px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 1.875rem;
+  opacity: 0.75;
+  color: #666;
+}
+@media (max-width: 420px) {
+  .adbanner {
+    margin: 0 20px 0 15px;
   }
-  @media (max-width: 350px) {
-    .adbanner { margin: 0 20px 0 5px; }
+}
+@media (max-width: 350px) {
+  .adbanner {
+    margin: 0 20px 0 5px;
   }
+}
+
+/* adbannerBox 暫停播放按鈕樣式 */
+.adbannerBox {
+  position: relative;
+}
+.adbannerBox .slickControlBox {
+  position: absolute;
+  z-index: 99;
+  top: -25px;
+  left: 10px;
+}
+
+@media (max-width: 420px) {
+  left: 20px;
+}
+.adbannerBox .slickControlBox button {
+  background: #333 url('../images/icon_stop.svg') no-repeat center center;
+  background-size: 16px auto;
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+  aspect-ratio: 1;
+  font-size: 0;
+  margin: 10px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  white-space: nowrap;
+}
+.adbannerBox .slickControlBox button:focus-visible {
+  outline: solid 2px #ff6a00;
+}
+.adbannerBox .slickControlBox button.active {
+  border: 2px solid #000;
+  flex: 0 0 auto;
+}
+.adbannerBox .slickControlBox button span:last-child {
+  display: none;
+}
+.adbannerBox .slickControlBox button.stop {
+  background: #000 url('../images/icon_play.svg') no-repeat center center;
+  background-size: 16px auto;
+}
+.adbannerBox .slickControlBox button.stop span:first-child {
+  display: none;
+}
+.adbannerBox .slickControlBox button.stop span:last-child {
+  display: block;
+}

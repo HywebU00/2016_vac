@@ -1,45 +1,47 @@
 @charset "UTF-8";
 /* CSS Document */
 .np {
-	color: #666666;
-	vertical-align: top;	
+  color: #666666;
+  vertical-align: top;
 }
-.MobileHide {font-size:0;}
+.MobileHide {
+  font-size: 0;
+}
 .np table {
-	clear: both;
-	width:98%;
-	border-collapse: collapse;  
+  clear: both;
+  width: 98%;
+  border-collapse: collapse;
 }
 
 .np .nplist {
-	margin: 10px auto 10px 0px;
+  margin: 10px auto 10px 0px;
 }
 .np .nplist li {
-	display:block;
-	margin: 5px 10 5px 0px;
-	padding:10px 10px 10px 25px;
-	list-style:none;
-	border-bottom: 1px solid #ddd;
-	background: url(../images/h2_icon01.png) no-repeat 0px 12px;
+  display: block;
+  margin: 5px 10 5px 0px;
+  padding: 10px 10px 10px 25px;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  background: url(../images/h2_icon01.png) no-repeat 0px 12px;
 }
 .np .nplist li span {
-	display:inline-block;
+  display: inline-block;
 }
 .np .nplist li a {
-	margin:0;
-	display:block;	
-	color: #3376cc;
+  margin: 0;
+  display: block;
+  color: #09479b;
 }
 .np .nplist li a:hover {
-	color:#ff9000;/*veela0819*/
-	text-decoration: none;
+  color: #c74900; /*veela0819*/
+  text-decoration: none;
 }
 .np li .From {
-	margin-left: 1em;
+  margin-left: 1em;
 }
 
-@media screen and (max-width:767px) {
-.np .nplist li { width:92%; }
+@media screen and (max-width: 767px) {
+  .np .nplist li {
+    width: 92%;
+  }
 }
-
-

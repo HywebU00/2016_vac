@@ -95,7 +95,7 @@
   content: '';
 }
 .header .nav ul li a {
-  color: #666;
+  color: #444;
 }
 .header .nav ul li a:hover {
   color: #6558b4;
@@ -194,7 +194,9 @@ h2 span {
   display: block;
   margin: 0 auto;
   max-width: 100% !important;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
   overflow: hidden;
 }
 .slider .bxslider li {
@@ -429,7 +431,7 @@ h2 span {
 }
 .mp .center .photo_book p {
   position: relative;
-  font-size: 12px;
+  font-size: 0.813rem;
   display: inline-block;
   display: block;
   height: 44px;
@@ -520,7 +522,7 @@ h2 span {
 }
 .mp .leftbg .photo_book p {
   position: relative;
-  font-size: 12px;
+  font-size: 0.813rem;
   display: inline-block;
   display: block;
   height: 44px;
@@ -543,7 +545,6 @@ h2 span {
   padding: 0px 0 0 10px;
   margin: 10px 0 0 10px;
   background-image: none;
-  font-size: 13px\9;
   font-size: 1.3rem;
 }
 .mp .leftbg .photo_book ul li .img02 img {
@@ -721,7 +722,7 @@ h2 span {
 }
 /*siteMap*/
 .siteMap {
-  background: #696cb4;
+  background: #5255a3;
   width: 100%;
   float: left;
   margin: 5px 0 0 0;
@@ -750,7 +751,7 @@ h2 span {
   text-align: left;
 }
 .siteMap ul li a {
-  color: #cac1fd;
+  color: #ddd7fd;
 }
 .siteMap ul li a:hover {
   color: #fff;
@@ -1120,15 +1121,15 @@ h2 span {
     }
   }
 }
-.sloganBanner{
+.sloganBanner {
 }
 @media (max-width: 767px) {
-	.sloganBanner{
-		margin-top: 2em;
-	}
+  .sloganBanner {
+    margin-top: 2em;
+  }
 }
-.sloganBanner .container a img{
-	width: 100%;
-	max-width: 1156px;
-	height: auto;
+.sloganBanner .container a img {
+  width: 100%;
+  max-width: 1156px;
+  height: auto;
 }

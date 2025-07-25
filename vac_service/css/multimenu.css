@@ -4,311 +4,338 @@
 /*--------------------[ mlmenu_左欄設定]--------------------*/
 
 .leftbg .mlmenu {
-	background: none;
-	position: static;
-	border-top: 5px solid #9285b4;
+  background: none;
+  position: static;
+  border-top: 5px solid #9285b4;
 }
-.leftbg .mlmenu ul  {
-	display: block;
-	margin: 0 0 5px 0px;
-	text-align: left;
-
+.leftbg .mlmenu ul {
+  display: block;
+  margin: 0 0 5px 0px;
+  text-align: left;
 }
 .leftbg .mlmenu ul li {
-	line-height: 2em;
-	list-style: none;
-	clear: both;
-	font-size:1.1em;
+  line-height: 2em;
+  list-style: none;
+  clear: both;
+  font-size: 1.1em;
 }
 .leftbg .mlmenu ul li a {
-	color: #524d85;
-	display: block;
-	padding:5px;
-	text-decoration:none;
+  color: #524d85;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
 }
 
-.leftbg .mlmenu ul li a:hover, .leftbg .mlmenu ul li.here a {
-	color: #fff;
-	background-color: #9285b4;
-	text-decoration: none;
+.leftbg .mlmenu ul li a:hover,
+.leftbg .mlmenu ul li.here a {
+  color: #fff;
+  background-color: #9285b4;
+  text-decoration: none;
 }
 .leftbg .mlmenu ul li a:before {
-	content: "";
-	display: none;
+  content: '';
+  display: none;
 }
 .leftbg .mlmenu ul li ul {
-	position: static;
-	display: block !important;
+  position: static;
+  display: block !important;
 }
 .leftbg .mlmenu ul li ul li {
-	border-bottom: #CCC dotted 1px;
-	background: url(../images/li_icon01.png) no-repeat 0px 10px;
-	padding: 3px 0 3px 12px;
-	margin: 0px;
-	font-size:0.9em;
-	border-bottom: #CCC dashed 1px;
-	display:block;
+  border-bottom: #ccc dotted 1px;
+  background: url(../images/li_icon01.png) no-repeat 0px 10px;
+  padding: 3px 0 3px 12px;
+  margin: 0px;
+  font-size: 0.9em;
+  border-bottom: #ccc dashed 1px;
+  display: block;
 }
-.leftbg .mlmenu ul li ul li:before{line-height: 1.4em;}
-.leftbg .mlmenu ul li ul li a,.leftbg .mlmenu ul li.here ul li a {
-	padding-top:2px;
-	color: #888;
-	background-color:  transparent;
+.leftbg .mlmenu ul li ul li:before {
+  line-height: 1.4em;
 }
-.leftbg .mlmenu ul li ul li a:hover{
-	color: #9285b4;
-	background-color: transparent;
-		}
+.leftbg .mlmenu ul li ul li a,
+.leftbg .mlmenu ul li.here ul li a {
+  padding-top: 2px;
+  color: #888;
+  background-color: transparent;
+}
+.leftbg .mlmenu ul li ul li a:hover {
+  color: #9285b4;
+  background-color: transparent;
+}
 /*--------------------[ mlmenu_左欄設定END]--------------------*/
-
 
 /*--------------------[ mlmenu_第一階控制 ]--------------------*/
 .header .mlmenu {
-	margin: 0px auto;
-	clear: both;
-	text-align: center;
-	width: 100%;
-	/* position: absolute; */
-	/* top: 167px; */
-	margin-top: 170px;
-	z-index: 9;
-	background-color: #09479b;
+  margin: 0px auto;
+  clear: both;
+  text-align: center;
+  width: 100%;
+  /* position: absolute; */
+  /* top: 167px; */
+  margin-top: 170px;
+  z-index: 9;
+  background-color: #09479b;
 }
 .header .mlmenu ul {
-	float: none;
-	text-align: center;
-	margin: 0 auto;
-	display: inline-block;
-	/* display: flex;
+  float: none;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  /* display: flex;
 	justify-content: center;
 	flex-wrap: wrap; */
 }
 .header .mlmenu ul li {
-	display: inline;
-	float: left;
-	position: relative;
+  display: inline;
+  float: left;
+  position: relative;
 }
 .header .mlmenu ul > li:before {
-	content: '/';
-	color: #1a60be;
-	position: absolute;
-	top:13px; left:0;
+  content: '/';
+  color: #1a60be;
+  position: absolute;
+  top: 13px;
+  left: 0;
 }
-.header .mlmenu ul li:first-child:before{ content: ''; }
+.header .mlmenu ul li:first-child:before {
+  content: '';
+}
 
 .header .mlmenu ul li a {
-	font-style: normal;
-	line-height: normal;
-	font-variant: normal;
-	color: #fff;
-	font-size: 1.2em;
-	line-height: 1.8em;
-	padding:8px;
-	display: block;
-	cursor: pointer;
+  font-style: normal;
+  line-height: normal;
+  font-variant: normal;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding: 8px;
+  display: block;
+  cursor: pointer;
 }
 .header .mlmenu ul li a:hover {
-	color: #089eeb;
+  color: #6ecaf8;
 }
 /*--------------------[ mlmenu_第二階控制 ]--------------------*/
 .header .mlmenu ul li ul {
-	left: 0;
-	right:0;
-	position: absolute;
-	display: block;
-	/*------預設選單先關掉,再由js控制load完所有資料再送出----------*/
-	display: none;
-	padding: 0px;
-	float: left;
-	z-index: 99;
-	margin: 0px 0px 0px 0px;
-	background-color: #fff;
-	border:1px solid #1a60be;
-	box-shadow: none;
-	width: 150px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  /*------預設選單先關掉,再由js控制load完所有資料再送出----------*/
+  display: none;
+  padding: 0px;
+  float: left;
+  z-index: 99;
+  margin: 0px 0px 0px 0px;
+  background-color: #fff;
+  border: 1px solid #1a60be;
+  box-shadow: none;
+  width: 150px;
 }
 .header .mlmenu ul li ul li {
-	clear: left;
-	padding: 0 0px;
-	margin: 0px;
-	float: none;
-	display: block;
-
+  clear: left;
+  padding: 0 0px;
+  margin: 0px;
+  float: none;
+  display: block;
 }
-.header .mlmenu ul li:before{ content: ''; }
+.header .mlmenu ul li:before {
+  content: '';
+}
 .header .mlmenu ul li ul li a {
-	border-bottom: #CCC dotted 1px;
-	background: url(../images/li_icon01.png) no-repeat 5px 8px;
-	padding: 3px 0 3px 18px;
-	margin: 0px 0px;
-	text-align: left;
+  border-bottom: #ccc dotted 1px;
+  background: url(../images/li_icon01.png) no-repeat 5px 8px;
+  padding: 3px 0 3px 18px;
+  margin: 0px 0px;
+  text-align: left;
 }
-.header .mlmenu ul li ul li:hover a{
-	background-color: #089eeb;color: #fff; }
+.header .mlmenu ul li ul li:hover a {
+  background-color: #089eeb;
+  color: #fff;
+}
 /*end of -----------------------menu*/
-
 
 /*第三層選單定位*/
 .header .mlmenu li li ul {
-	position: absolute;
-	z-index: 1000;
-	display: none;
+  position: absolute;
+  z-index: 1000;
+  display: none;
 }
 .header .mlmenu li ul li a {
-	color: #000066;
-	font-size: 1em;
-
+  color: #000066;
+  font-size: 1em;
 }
 /*end of -----------------------menu*/
 
 /*手機滑動選單相關*/
 
-
-.openMenu, .closeMenu {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: -100%;
+.openMenu,
+.closeMenu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -100%;
 }
-.openMenu.show, .closeMenu.show {
-	left: 0;
+.openMenu.show,
+.closeMenu.show {
+  left: 0;
 }
 .openMenu {
-	background: #43b8ca url(../images/mobileMenuIcon.png) center;
+  background: #43b8ca url(../images/mobileMenuIcon.png) center;
 }
 .closeMenu {
-	background: #43b8ca url(../images/mobileMenuIcon.png) center;
+  background: #43b8ca url(../images/mobileMenuIcon.png) center;
+}
+.openMenu:focus-visible,
+.closeMenu:focus-visible {
+  box-shadow: inset 0 0 0 3px #ff6a00;
 }
 .mobileMenu {
-	display: none;    /*一般非手機情況消失*/
-	overflow: hidden;
-	width: 40px;
-	height: 40px;
-	top: 10px;
-	left: 20px;
-	z-index: 9999999;
-	border-radius: 5px;
-	-webkit-transition: left 0.5s;
-	-moz-transition: left 0.5s;
+  display: none; /*一般非手機情況消失*/
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: 20px;
+  z-index: 9999999;
+  border-radius: 5px;
+  -webkit-transition: left 0.5s;
+  -moz-transition: left 0.5s;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-
-.center .mix_3 {
+  .center .mix_3 {
     width: 45%;
+  }
 }
 
-}
+@media screen and (max-width: 767px) {
+  .leftbg .mlmenu ul li ul,
+  .mlmenu.show ul li ul {
+    display: block;
+  }
 
+  .leftbg .mlmenu ul li a:before,
+  .mlmenu.show ul li a:before {
+    display: none;
+  }
+  .mpwrap {
+    height: 100%;
+    -webkit-transition: margin 0.5s;
+    -moz-transition: margin 0.5s;
+  }
+  .header .mlmenu {
+    display: none;
+  }
 
-@media screen and (max-width:767px){
+  .leftbg .mlmenu,
+  .mlmenu.show {
+    position: fixed;
+    top: 0;
+    display: block;
+    left: -150px;
+    width: 150px;
+    height: 100%;
+    background: #e8e8e8;
+    -webkit-transition: left 0.5s; /*for手機要加前綴字*/
+    -moz-transition: left 0.5s;
+  }
+  .leftbg .mlmenu ul,
+  .mlmenu.show ul {
+    margin: 0 0 0 0px;
+  }
+  .leftbg .mlmenu ul li,
+  .mlmenu.show ul li {
+    display: inline;
+    padding: 0 0 0 0px;
+    border-bottom: 1px dashed #fff;
+    background-position: 2px 8px;
+    color: #fff;
+  }
+  .leftbg .mlmenu ul li a,
+  .mlmenu.show ul li a {
+    display: block;
+    padding: 8px 5px 8px 25px;
+    color: #333;
+    text-decoration: none;
+  }
+  .leftbg .mlmenu ul li a:focus-visible,
+  .mlmenu.show ul li a:focus-visible {
+    box-shadow: inset 0 0 0 3px #ff6a00;
+    outline: none !important;
+  }
+  .mlmenu.show ul li {
+    display: block;
+    float: none;
+  }
+  .mlmenu.show ul li a {
+    display: block !important;
+    padding: 8px 5px 8px 0px;
+    width: 100%;
+    text-decoration: none;
+  }
+  .leftbg .mlmenu ul li a:hover,
+  .mlmenu.show ul li a:hover {
+    color: #36c;
+  }
+  .mobileMenu {
+    display: block;
+    position: fixed;
+    left: 10px;
+    top: 7px;
+  }
+  .mpwrap {
+    margin-left: 0;
+  }
+  .mobileMenu.show {
+    left: 160px;
+  }
+  .mlmenu.show {
+    /*.nav.show不要有空格才會同時套用兩個*/
+    left: 0;
+    margin-top: 0;
+  }
+  .mpwrap.show {
+    margin-left: 150px;
+  }
+  .leftbg .mlmenu ul li ul li,
+  .mlmenu.show ul li ul li {
+    padding-left: 20px;
+    background: url(../images/li_icon01.png) no-repeat 5px 8px;
+    border-bottom: 0px;
+  }
+  .leftbg .mlmenu ul li ul li a,
+  .mlmenu.show ul li ul li a {
+    padding: 0px;
+    color: #333;
+    background: none;
+  }
+  .leftbg .mlmenu ul li ul li a:hover,
+  .mlmenu.show ul li ul li a:hover {
+    color: #233d7e;
+    background: none;
+    display: block !important;
+  }
+  .leftbg .mlmenu ul li ul,
+  .mlmenu.show ul li ul {
+    background: none;
+    display: block !important;
+    padding: 0px;
+    float: none;
+    z-index: 99;
+    margin: 0px 0px 0px 0px;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    position: inherit;
+  }
 
-.leftbg .mlmenu ul li ul, .mlmenu.show ul li ul{
-	display:block;
-}
+  .nav {
+    left: 0px;
+    -webkit-transition: left 0.5s; /*for手機要加前綴字*/
+    -moz-transition: left 0.5s;
+  }
 
-.leftbg .mlmenu ul li a:before,.mlmenu.show ul li a:before {
-display:none;
-}
- .mpwrap {
- height:100%;
- -webkit-transition:margin 0.5s;
- -moz-transition:margin 0.5s;
-}
-.header .mlmenu{display:none; }
-
-.leftbg .mlmenu,.mlmenu.show {
- position:fixed;
- top:0;
- display: block;
- left:-150px;
- width:150px;
- height:100%;
- background:#E8E8E8;
- -webkit-transition:left 0.5s; /*for手機要加前綴字*/
- -moz-transition:left 0.5s;
-}
-.leftbg .mlmenu ul ,.mlmenu.show ul{
-margin: 0 0 0 0px;
-}
-.leftbg .mlmenu ul li ,.mlmenu.show ul li {
- display:inline;
- padding:0 0 0 0px;
- border-bottom:1px dashed #FFF;
- background-position:2px 8px;
- color:#FFF;
-}
-.leftbg .mlmenu ul li a ,.mlmenu.show ul li a {
- display:block ;
- padding:8px 5px 8px 25px;
- color:#333;
- text-decoration:none;
-}
-.mlmenu.show ul li{display: block; float: none;}
-.mlmenu.show ul li a {
- display:block !important;
- padding:8px 5px 8px 0px;
- width:100%;
- text-decoration:none;
-}
-.leftbg .mlmenu ul li a:hover ,.mlmenu.show ul li a:hover{
- color:#36C;
-}
- .mobileMenu {
- display:block;
- position:fixed;
- left:10px;
- top:7px;
-}
-.mpwrap {
- 	margin-left:0;
-}
-.mobileMenu.show {
- 	left:160px;
-}
-.mlmenu.show {/*.nav.show不要有空格才會同時套用兩個*/
- 	left:0;
-	margin-top: 0;
-}
-.mpwrap.show {
- 	margin-left:150px;
-}
-.leftbg .mlmenu ul li ul li ,.mlmenu.show ul li ul li{
-	padding-left:20px;
-	background:url(../images/li_icon01.png) no-repeat 5px 8px;
-	border-bottom:0px;
-}
-.leftbg .mlmenu ul li ul li a ,.mlmenu.show ul li ul li a{
-	padding:0px;
-	color:#333;
-	background:none;
-}
-.leftbg .mlmenu ul li ul li a:hover ,.mlmenu.show ul li ul li a:hover{
-	color: #233D7E;
-	background:none;
-	display: block !important;
-
-}
-.leftbg .mlmenu ul li ul ,.mlmenu.show ul li ul {
-	background:none;
-	display: block !important;
-	padding: 0px;
-	float: none;
-	z-index: 99;
-	margin: 0px 0px 0px 0px;
-	background-color: #fff;
-	border:none;
-	box-shadow: none;
-	position: inherit;
-
-}
-
-
-.nav{ left:0px;
--webkit-transition:left 0.5s; /*for手機要加前綴字*/
- -moz-transition:left 0.5s;}
-
-.nav.show{
-	left:150px;
-	}
-
+  .nav.show {
+    left: 150px;
+  }
 }

@@ -8,9 +8,9 @@
 	word-break: break-all;
 }
 .cp h2, .cp h3, .cp h4, .cp h5, .cp h6 { margin: 0.5em 0 }
-.cp h2 { font-size: 1.562em; color: #088acd ;border-bottom: none;}
+.cp h2 { font-size: 1.562em; color: #0777b1 ;border-bottom: none;}
 .cp h3 { font-size: 1.23em; color: #1a60be; }
-.cp h4 { font-size: 1.15em; color: #766FBE;}
+.cp h4 { font-size: 1.15em; color: #655db6;}
 .cp h5 { font-size: 1.08em; }
 .cp h6 { font-size: 1em; }
 /*--------------------------------------------------------------------------------[  image  ]----------*/
@@ -97,7 +97,7 @@
 	background: url(../images/icon2.gif) no-repeat 0px 6px;
 }
 .cp .info span {
-	color: #766FBE;/*veela819*/
+	color: #6961b8;/*veela819*/
 	padding: 0 5px 0 5px;
 	font-weight: normal;
 }
